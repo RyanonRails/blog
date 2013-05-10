@@ -14,6 +14,6 @@ It’ll blow up your tabs and completely KILL your browsing. It basically makes 
 
 ![][2]
 
- [2]: http://www.ryanonrails.com/wp-content/uploads/2011/03/CRM2011_Zoom_Fail.png
+ [2]: /images/old/CRM2011_Zoom_Fail.png
 
 Let me know if you’ve found a better bug! I heard via twitter that someone removed all of the admin accounts at once (which can be done if you do it all in 1 go, not sure if it’s been fixed as of yet).

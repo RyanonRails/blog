@@ -16,7 +16,7 @@ For an CD/DVD’s click Devices -> CD/DVD Devices -> Host Drive
 
 ![][2]
 
- [2]: http://www.ryanonrails.com/wp-content/uploads/2011/02/SQL_Server_Device.png
+ [2]: /images/old/SQL_Server_Device.png
 
 Click Run Setup when prompted.
 
@@ -26,19 +26,19 @@ SQL Server Installation Center should come up. Click Installation, and then New 
 
 ![][3]
 
- [3]: http://www.ryanonrails.com/wp-content/uploads/2011/02/SQL_Server_Installation_Center.png
+ [3]: /images/old/SQL_Server_Installation_Center.png
 
 Everything should pass on the Support Setup, Click OK.
 
 ![][4]
 
- [4]: http://www.ryanonrails.com/wp-content/uploads/2011/02/SQL_Server_Support_Rules.png
+ [4]: /images/old/SQL_Server_Support_Rules.png
 
 Enter your product key and hit next
 
 ![][5]
 
- [5]: http://www.ryanonrails.com/wp-content/uploads/2011/02/SQL_Server_Key.png
+ [5]: /images/old/SQL_Server_Key.png
 
 Accept the Terms and Conditions and click Next.
 
@@ -50,30 +50,30 @@ All the tests should pass, click next.
 
 ![][6]
 
- [6]: http://www.ryanonrails.com/wp-content/uploads/2011/02/SQL_Server_More_Support_Rules.png
+ [6]: /images/old/SQL_Server_More_Support_Rules.png
 
 Click SQL Server Feature Installation , click Next
 
 ![][7]
 
- [7]: http://www.ryanonrails.com/wp-content/uploads/2011/02/SQL_Server_Setup_Role.png
+ [7]: /images/old/SQL_Server_Setup_Role.png
 
 Click Select All, Click Next
 
 ![][8]
 
- [8]: http://www.ryanonrails.com/wp-content/uploads/2011/02/SQL_Server_Feature_Selection.png
+ [8]: /images/old/SQL_Server_Feature_Selection.png
 
 Everything should pass on the next step, click next.  
 ![][9]
 
- [9]: http://www.ryanonrails.com/wp-content/uploads/2011/02/SQL_Server_Installation_Rules.png
+ [9]: /images/old/SQL_Server_Installation_Rules.png
 
 Make sure Default instance is selected, click next
 
 ![][10]
 
- [10]: http://www.ryanonrails.com/wp-content/uploads/2011/02/SQL_Server_Instance_Configuration.png
+ [10]: /images/old/SQL_Server_Instance_Configuration.png
 
 Disk Space requirements should pass (as we have 50 gigs), click Next
 
@@ -83,19 +83,19 @@ For Setting up the Database Engine Account Provisioning, click “Add Current Us
 
 ![][11]
 
- [11]: http://www.ryanonrails.com/wp-content/uploads/2011/02/SQL_Server_Database_Engine_Config.png
+ [11]: /images/old/SQL_Server_Database_Engine_Config.png
 
 For Setting up the Analysis Service Account Provisioning, click “Add Current User” (which will add the administrator account you’re logged in as). Click Next
 
 ![][12]
 
- [12]: http://www.ryanonrails.com/wp-content/uploads/2011/02/SQL_Server_Analysis_Services.png
+ [12]: /images/old/SQL_Server_Analysis_Services.png
 
 Make sure “Install the native mode default configuration” is selected, and click Next.
 
 ![][13]
 
- [13]: http://www.ryanonrails.com/wp-content/uploads/2011/02/SQL_Server_Reporting_Services_Config.png
+ [13]: /images/old/SQL_Server_Reporting_Services_Config.png
 
 Error Reporting, click Next
 
@@ -109,7 +109,7 @@ Success!
 
 ![][14]
 
- [14]: http://www.ryanonrails.com/wp-content/uploads/2011/02/SQL_Server_Config.png
+ [14]: /images/old/SQL_Server_Config.png
 
 I would suggest a quick reboot of the virtual machine at this point. Once the machine has rebooted, lets take a snapshot up to where we are (in case something goes bad in the future, we can go back to this snapshot).
 
@@ -117,13 +117,13 @@ Click Machine -> Take Snapshot
 
 ![][15]
 
- [15]: http://www.ryanonrails.com/wp-content/uploads/2011/02/SQL_Server_Snapshot.png
+ [15]: /images/old/SQL_Server_Snapshot.png
 
 Give it a quick name, and then hit save.
 
 ![][16]
 
- [16]: http://www.ryanonrails.com/wp-content/uploads/2011/02/SQL_Server_Snapshot_Name.png
+ [16]: /images/old/SQL_Server_Snapshot_Name.png
 
 Let’s go create our [domain controller][17].
 

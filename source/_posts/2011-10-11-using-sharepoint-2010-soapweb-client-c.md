@@ -12,7 +12,7 @@ I’ve been meaning to post this for a while since I had some annoying issues wi
 
 ![][2]
 
- [2]: http://www.ryanonrails.com/wp-content/uploads/2011/09/sp2010_structure.bmp
+ [2]: /images/old/sp2010_structure.bmp
 
 I’ve had to do quite a few things with the Sharepoint 2010 web services and web client object. I figured I should post some solutions as quite a few of these are undocumented. My goal was not to have to import the SP Library and just use the web services along with the basic GET PUT methods of the WebClient.
 

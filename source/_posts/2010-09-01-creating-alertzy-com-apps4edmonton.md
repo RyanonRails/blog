@@ -36,8 +36,8 @@ I had taken inventory of everything that was on the site (that I found might per
 Analyzing City of Edmonton
 
 The room was alive with ideas and how we could implement it. But it all came to a full stop once we realized the amount of $$$ it costs for a [short code][5]. Upwards of 500$ a **month** (short codes must be used for business, you couldn’t buy a phone from a cellphone company and use that phone number. If i’m not mistaken it’s against the TOS).
-
- [4]: http://www.ryanonrails.com/wp-content/uploads/2010/09/Ryan_on_Rails_book2.png "Data thoughts"
+/images/old/
+ [4]: /images/old/Ryan_on_Rails_book2.png "Data thoughts"
  [5]: http://en.wikipedia.org/wiki/Short_code
 
 We thought the idea was dead right there.. But Ben had a plan! He has a friend who owns [Direct Text Marketing][6]. And thought we might be able to get some sponsored texts… We put this thought on hold for now (until Ben heard word from his friend) and moved on to the next topic…
@@ -77,7 +77,7 @@ E Text Editor Fails. Half Tabs!?
 **What’s in a name?**  
 2 hours. 2… long… hours. That’s how long we sat around thinking of names, checking them against a who is database, and *face palming* whenever we had a good name, and the .com was taken. We came up with a few names and wrote them on our white board and got up to go grab some donairs. Greg went to go get ready, and Ben and I were still coming up with ideas. I was determined to get a Z in our name (Z’s are awesome. I’m gonna name my kid Zen, I swear. Boy OR girl). Anyhow, I blurted out “Alertzy!” In a greek kinda voice, and we added it to the board. We chowed down on our hard earned donairs and picked the name Alertzy an hour later.
 
- [15]: http://www.ryanonrails.com/wp-content/uploads/2010/09/Ryan_on_Rails_EText.png "E Text Editor Fails"
+ [15]: /images/old/Ryan_on_Rails_EText.png "E Text Editor Fails"
 
 Alertzy was added to facebook and [twitter][16] on this day also.
 
@@ -94,7 +94,7 @@ Ruby on Rails Books
 
 We noticed that the open data was kind of weird and didn’t match up, we ended up figuring out what was wrong and synced the data up. We fired an email off to the open data at OpenData@edmonton.ca and they fixed it up for anyone else that would be using this. After the competition closed, we noticed that [ @MarkBennett][19] also had the same problem.
 
- [18]: http://www.ryanonrails.com/wp-content/uploads/2010/09/Ryan_on_Rails_Books.png
+ [18]: /images/old/Ryan_on_Rails_Books.png
  [19]: http://twitter.com/MarkBennett/status/21879487660
 
 We had been coding for a few days now, and everything was starting to come together.
@@ -128,7 +128,7 @@ The site went live on slicehost providing garbage day text message reminders, al
 **Thoughts on Apps 4 Edmonton**  
 I think the City of Edmonton was smart to have a competition like this. They provided incentive, data for us to work with, support on that data, and a platform for users to submit ideas, what more could a developer want?
 
- [24]: http://www.ryanonrails.com/wp-content/uploads/2010/09/Alertzy1.png
+ [24]: /images/old/Alertzy1.png
 
 The only concern I would have as a developer would be that the datasets stay up to date, and in the same format. That goes for all cities using the open data catalog.
 

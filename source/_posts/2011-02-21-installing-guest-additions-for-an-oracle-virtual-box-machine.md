@@ -14,11 +14,11 @@ Click Devices -> Install Guest Additions
 
 ![][2]
 
- [2]: http://www.ryanonrails.com/wp-content/uploads/2011/02/VB_Guest_Menu.png
+ [2]: /images/old/VB_Guest_Menu.png
 
 ![][3]
 
- [3]: http://www.ryanonrails.com/wp-content/uploads/2011/02/VB_Guest_Run.png
+ [3]: /images/old/VB_Guest_Run.png
 
 Click Run VBoxWindowsAdditions.exe
 

@@ -13,7 +13,7 @@ I ran across this error when I was moving an organization from 1 domain into ano
 
 ![][2]
 
- [2]: http://www.ryanonrails.com/wp-content/uploads/2011/07/import-fail.bmp
+ [2]: /images/old/import-fail.bmp
 
 Basically what it is saying is that at least one of the accounts that exists in the database that you’re importing needs to be mapped to a Deployment Administrator in your current domain.
 
@@ -28,7 +28,7 @@ It’s important to note that the user mapping doesn’t have to match the same 
 
 ![][3]
 
- [3]: http://www.ryanonrails.com/wp-content/uploads/2011/07/user-mapping.png
+ [3]: /images/old/user-mapping.png
 
 So the user Ryan Jones can map to the CRM Deployment Admin. I don’t necessarily suggest this though. I would make one of the users a Deployment Admin and map the users directly. In the end I made Ryan Jones a Deployment Admin and mapped Ryan Jones (CRM DB) -> Ryan Jones (new domain).
 

@@ -65,7 +65,7 @@ Now, you need to set **ONLY** the references that you want to copy into the DLL 
 
 ![][3]
 
- [3]: http://www.ryanonrails.com/wp-content/uploads/2011/06/Copy_Local_True.png
+ [3]: /images/old/Copy_Local_True.png
 
 Now, we can reload our project by Right clicking our project -> Reload Project. Open up your plugin and add this event handler:
 
@@ -106,7 +106,7 @@ Caveats:
 The plugin must be registered as “Non-sandbox” in order to have the permissions to use the AssemblyResolve event handler.
 ![][4]
 
- [4]: http://www.ryanonrails.com/wp-content/uploads/2011/06/Non_Sandbox.png
+ [4]: /images/old/Non_Sandbox.png
 
 The user registering the plugin needs to be a deployment manager (otherwise users could inject bad stuff with AssemblyResolve, whether on purpose or by accident).
 

@@ -12,25 +12,25 @@ Web services don’t work when we access them from Settings -> Developer Resourc
 
 ![][2]
 
- [2]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM2011_Web_Services_Menu_1.png
+ [2]: /images/old/CRM2011_Web_Services_Menu_1.png
 
 Click properties on the right hand side.
 
 ![][3]
 
- [3]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM2011_Web_Services_Dep_2.png
+ [3]: /images/old/CRM2011_Web_Services_Dep_2.png
 
 Click Web Address up top. Change the port from 80 to 85.
 
 ![][4]
 
- [4]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM2011_Web_Services_80_85_3.png
+ [4]: /images/old/CRM2011_Web_Services_80_85_3.png
 
 If you still have errors, you might need to delete your bindings off of your website (which is ironic, since I asked you to change localhost to win-b80icqrvluf to fix that problem. I ended up deleting my bindings and everything still worked (so I’m not sure why it ended up fixing the file upload by changing localhost to win-b80icqrvluf, maybe someone out there knows?). 
 
 ![][5]
 
- [5]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM2011_Web_Services_Delete_Bindings_4.png
+ [5]: /images/old/CRM2011_Web_Services_Delete_Bindings_4.png
 
 Everything be ready to go now! Install Visual Studio 2010 on your VM (I’ll leave that up to you (for now)!). 
 

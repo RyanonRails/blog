@@ -18,13 +18,13 @@ Pick the installation media you want to use (I have an MSDN ISO, so I picked my 
 
 ![][2]
 
- [2]: http://www.ryanonrails.com/wp-content/uploads/2011/02/Server_2008_Installation_Media.png
+ [2]: /images/old/Server_2008_Installation_Media.png
 
 Click Finish on the First Run Wizard Summary.
 
 ![][3]
 
- [3]: http://www.ryanonrails.com/wp-content/uploads/2011/02/Server_2008_Operating_Sys_Pick.png
+ [3]: /images/old/Server_2008_Operating_Sys_Pick.png
 
 Picked Windows Server 2008 R2 (Full Installation), then Next.
 
@@ -36,7 +36,7 @@ Click Next on Disk 0.
 
 ![][4]
 
- [4]: http://www.ryanonrails.com/wp-content/uploads/2011/02/Server_2008_Operating_Sys_Pick1.png
+ [4]: /images/old/Server_2008_Operating_Sys_Pick1.png
 
 Windows Server 2008 R2 will now install!
 
@@ -48,18 +48,18 @@ Let’s do some quick maintenance. Click the Server Manager on the task bar (the
 
 ![][5]
 
- [5]: http://www.ryanonrails.com/wp-content/uploads/2011/02/Server_2008_Configure_IE_ESC.png
+ [5]: /images/old/Server_2008_Configure_IE_ESC.png
 
 Click off for both Administrators and Users. This will stop you from getting blocked when trying to access the web.
 
 ![][6]
 
- [6]: http://www.ryanonrails.com/wp-content/uploads/2011/02/Server_2008_Configure_IE_ESC_Off.png
+ [6]: /images/old/Server_2008_Configure_IE_ESC_Off.png
 
 Let’s get updated! Click Start -> Run Windows update. (I closed the other configuration screens at this point).  
 ![][7]
 
- [7]: http://www.ryanonrails.com/wp-content/uploads/2011/02/Server_2008_Windows_Updates.png
+ [7]: /images/old/Server_2008_Windows_Updates.png
 
 Turn on Automatic updates (we’re not worried about security fixes as it’s just a dev box, but some of the fixes can fix compatibility between software).
 

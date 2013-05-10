@@ -14,6 +14,6 @@ The E-mail Router Configuration Manager was unable to retrieve user and queue in
 
 ![][2]
 
- [2]: http://www.ryanonrails.com/wp-content/uploads/2011/08/Metadata-Error.png
+ [2]: /images/old/Metadata-Error.png
 
 Basically this error is saying that it can’t connect to the URL. The reason I ran into this issue was because we were having DNS issues and couldn’t connect to the server. Hope this helps as the error is slightly cryptic (saying it’s busy).

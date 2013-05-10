@@ -14,7 +14,7 @@ Click Start -> Run, and type in “dcpromo” then hit enter. What should come u
 
 ![DC promo][2]
 
- [2]: http://www.ryanonrails.com/wp-content/uploads/2011/02/DC_dcpromo.png
+ [2]: /images/old/DC_dcpromo.png
 
 On the Operating System Compatibility screen, click Next
 
@@ -22,37 +22,37 @@ On the Choose a deployment configuration, click “Create a new domain in a new 
 
 ![DC forest level][3]
 
- [3]: http://www.ryanonrails.com/wp-content/uploads/2011/02/DC_Forst_Level.png
+ [3]: /images/old/DC_Forst_Level.png
 
 Now we need to enter in a FQDN (a .com). As this is just a dev box, punch in corp.contoso.com, click Next.
 
 [!DC FQDN][4]
 
- [4]: http://www.ryanonrails.com/wp-content/uploads/2011/02/DC_FQDN.png
+ [4]: /images/old/DC_FQDN.png
 
 Set forest functionality level to “Windows Server 2008 R2”, click Next.
 
 ![DC forest level][5]
 
- [5]: http://www.ryanonrails.com/wp-content/uploads/2011/02/DC_Forst_Level.png
+ [5]: /images/old/DC_Forst_Level.png
 
 Additional Domain Controller Options, Make sure DNS Server is checked, click Next
 
 ![DC DNS][6]
 
- [6]: http://www.ryanonrails.com/wp-content/uploads/2011/02/DC_DNS.png
+ [6]: /images/old/DC_DNS.png
 
 In a normal world you’d want to set a static ip on a domain controller, again, since this is a dev box, I just go with an IP from the DHCP server. Click Yes.
 
 ![DC DHCP][7]
 
- [7]: http://www.ryanonrails.com/wp-content/uploads/2011/02/DC_DHCP.png
+ [7]: /images/old/DC_DHCP.png
 
 If you get this error, click next.
 
 ![DC Delegation][8]
 
- [8]: http://www.ryanonrails.com/wp-content/uploads/2011/02/DC_Delegation.png
+ [8]: /images/old/DC_Delegation.png
 
 For the Locations of the Database, Log Files and SYSVOL, leave the defaults and click Next.
 

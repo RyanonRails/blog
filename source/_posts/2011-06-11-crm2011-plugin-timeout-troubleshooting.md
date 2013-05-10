@@ -74,4 +74,4 @@ I didn’t find many of these error messages on Google, so hopefully this has pr
 Thanks,  
 Ry
 
- [2]: http://www.ryanonrails.com/wp-content/uploads/2011/06/CRM2011_Lock.png
+ [2]: /images/old/CRM2011_Lock.png

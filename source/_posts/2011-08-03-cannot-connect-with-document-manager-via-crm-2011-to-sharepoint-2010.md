@@ -23,13 +23,13 @@ First, make sure the site browsing is permissive. Now we need to setup our alter
 
 ![][2]
 
- [2]: http://www.ryanonrails.com/wp-content/uploads/2011/07/Alternate_Access_Mappings.png
+ [2]: /images/old/Alternate_Access_Mappings.png
 
 Default would be http://crmserver:5555 and internet would be https://sp.crmserver.ca. This would be needed if you’re using external DNS. If you don’t set this up it tries to use the internal address to communicate out, which of course causes the connection to fail.
 
 ![][3]
 
- [3]: http://www.ryanonrails.com/wp-content/uploads/2011/07/Alternate_Access_Mappings_URLs.png
+ [3]: /images/old/Alternate_Access_Mappings_URLs.png
 
 Once the alternate mappings were setup I was able to continue on through the Document Manager.
 

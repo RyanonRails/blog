@@ -18,13 +18,13 @@ Click New -> Click Next on the Terms and Conditions -> Give the image a name (MS
 
 ![][3]
 
- [3]: http://www.ryanonrails.com/wp-content/uploads/2011/02/VB_Setup_New2.png
+ [3]: /images/old/VB_Setup_New2.png
 
 Since you’re running Server 2008 R2, SQL Server 2008 R2 and CRM 2011 you’re going to need a substantial amount of ram. I use about 4 gigs. Click Next after picking the amount of RAM.
 
 ![][4]
 
- [4]: http://www.ryanonrails.com/wp-content/uploads/2011/02/VM_Setup_RAM.png
+ [4]: /images/old/VM_Setup_RAM.png
 
 Create new Hard Disk (leave Boot Hard Disk checked) -> Click Next
 
@@ -32,7 +32,7 @@ Click Next on the New Virtual Disk Wizard Info Screen
 
 ![][5]
 
- [5]: http://www.ryanonrails.com/wp-content/uploads/2011/02/VM_Setup_HD_Storage.png
+ [5]: /images/old/VM_Setup_HD_Storage.png
 
 We want dynamically expanding storage -> Click Next
 
@@ -40,7 +40,7 @@ We want dynamically expanding storage -> Click Next
 
 ![][6]
 
- [6]: http://www.ryanonrails.com/wp-content/uploads/2011/02/VM_Setup_Location_Size.png
+ [6]: /images/old/VM_Setup_Location_Size.png
 
 Click Finish on Summary
 

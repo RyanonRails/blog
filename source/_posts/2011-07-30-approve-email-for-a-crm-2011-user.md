@@ -15,4 +15,4 @@ I recently ran into this error when setting up an email router:
 Here’s how you can approve email in CRM 2011:  
 ![][2]
 
- [2]: http://www.ryanonrails.com/wp-content/uploads/2011/07/Approve-User-Email.png
+ [2]: /images/old/Approve-User-Email.png

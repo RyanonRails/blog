@@ -24,11 +24,11 @@ On the Download and Install Required Components, click Install. It will prompt t
 
 ![][2]
 
- [2]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_Download_Install1.png
+ [2]: /images/old/CRM_Download_Install1.png
 
 ![][3]
 
- [3]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_Download_Install_Done2.png
+ [3]: /images/old/CRM_Download_Install_Done2.png
 
 Leave the default installation directory, click Next.
 
@@ -36,13 +36,13 @@ Specify Server Roles, make sure all boxes are checked and click Next.
 
 ![][4]
 
- [4]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_Specify_Server_Roles.png
+ [4]: /images/old/CRM_Specify_Server_Roles.png
 
 Specific Deployment Options. Put a “.” In the box (localhost), and make sure Create a new deployment is marked.
 
 ![CRM specify development options][5]
 
- [5]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_Specify_Development_Options.png
+ [5]: /images/old/CRM_Specify_Development_Options.png
 
 Select the Organizational Unit. We need to create an OU for CRM before we can proceed with this step.
 
@@ -52,13 +52,13 @@ Right click corp.contoso.com -> New -> Organizational Unit, call it CRM, click O
 
 ![][6]
 
- [6]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_OU.png
+ [6]: /images/old/CRM_OU.png
 
 Back to the Select Organization Unit screen, click Browse and choose CRM. Click Next.
 
 ![][7]
 
- [7]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_OU_Pick.png
+ [7]: /images/old/CRM_OU_Pick.png
 
 Specify Service Accounts
 
@@ -66,7 +66,7 @@ Set NT AUTHORITYNETWORK SERVICE for all of them. Click Next.
 
 ![][8]
 
- [8]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_Specify_Service_Account.png
+ [8]: /images/old/CRM_Specify_Service_Account.png
 
 Select Web Site
 
@@ -74,7 +74,7 @@ Since this is just a dev box, I’m just going to use the Default Web Site. Clic
 
 ![][9]
 
- [9]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_Select_Website.png
+ [9]: /images/old/CRM_Select_Website.png
 
 Specify E-mail Router Settings (leave blank), Click next.
 
@@ -82,13 +82,13 @@ Specify the Organization Settings. I used the settings below, but you can choose
 
 ![][10]
 
- [10]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_Organization_Settings.png
+ [10]: /images/old/CRM_Organization_Settings.png
 
 Specify Report Services Server. It should auto populate with your reporting server. Click Next
 
 ![][11]
 
- [11]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_Reporting_Services_Server.png
+ [11]: /images/old/CRM_Reporting_Services_Server.png
 
 Customer Experience screen, click Next.
 
@@ -98,7 +98,7 @@ System checks should all pass, click Next.
 
 ![][12]
 
- [12]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_System_Checks.png
+ [12]: /images/old/CRM_System_Checks.png
 
 Service Disruption Warning, click Next.
 
@@ -106,7 +106,7 @@ Ready to Install Microsoft Dynamics CRM, click Install. It’ll work its way thr
 
 ![][13]
 
- [13]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_Completed.png
+ [13]: /images/old/CRM_Completed.png
 
 Reporting Extensions setup, prompted for updates, click Next. Once it’s done checking for updates, click Next.
 
@@ -116,13 +116,13 @@ Specify Configuration Database Server, it should auto populate the SQL Server, c
 
 ![][14]
 
- [14]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_SSRS_DB.png
+ [14]: /images/old/CRM_SSRS_DB.png
 
 Specify SSRS Instance Name, leave as MSSQLSERVER, click Next
 
 ![][15]
 
- [15]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_SSRS_DB_Instance.png
+ [15]: /images/old/CRM_SSRS_DB_Instance.png
 
 Use the default installation directory, click Next.
 
@@ -130,7 +130,7 @@ System checks should pass, click Next.
 
 ![][16]
 
- [16]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_SSRS_System_Checks.png
+ [16]: /images/old/CRM_SSRS_System_Checks.png
 
 Service Disruption warning, click Next.
 
@@ -142,17 +142,17 @@ Now to reap the rewards. Open Internet Explorer and punch in “localhost” int
 
 ![][17]
 
- [17]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_SSRS_CRM_Open.png
+ [17]: /images/old/CRM_SSRS_CRM_Open.png
 
 I would suggest creating a few new records and running a report against them to make sure everything is working correctly.
 
 ![][18]
 
- [18]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_SSRS_Test_Account.png
+ [18]: /images/old/CRM_SSRS_Test_Account.png
 
 ![][19]
 
- [19]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM_SSRS_Test_Report.png
+ [19]: /images/old/CRM_SSRS_Test_Report.png
 
 At this point you should create another snapshot with the caption of “Fresh CRM 2011 Install”.
 

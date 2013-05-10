@@ -16,7 +16,7 @@ Click Microsoft Dynamics CRM, and then click “Stop” under Manage Web Site.
 
 ![][2]
 
- [2]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM2011_Sharepoint2010_Port_Change_15.png
+ [2]: /images/old/CRM2011_Sharepoint2010_Port_Change_15.png
 
 Click “Bindings…” under Edit Site
 
@@ -24,7 +24,7 @@ Click http and click Edit. Change the port to 85 (or whatever # you want) and Cl
 
 ![][3]
 
- [3]: http://www.ryanonrails.com/wp-content/uploads/2011/02/CRM2011_Sharepoint2010_Port_Change_85_16.png
+ [3]: /images/old/CRM2011_Sharepoint2010_Port_Change_85_16.png
 
 Let’s go and [create a web application and Share Point 2010 site][3].
 

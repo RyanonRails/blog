@@ -18,12 +18,12 @@ Line Number: Not available
 
 Request URL: https://crm.contoso.ca/development/AppWebServices/RecentlyViewedWebService.asmx
 
-Stack Trace Info: [CrmException: **The user Id is invalid**.] at Microsoft.Crm.BusinessEntities.SecurityLibrary.GetPrivilegedUserCallerAndBusinessGuidsFromThread  
+>Stack Trace Info: [CrmException: **The user Id is invalid**.] at Microsoft.Crm.BusinessEntities.SecurityLibrary.GetPrivilegedUserCallerAndBusinessGuidsFromThread  
 (WindowsIdentity identity, IOrganizationContext context)
 
-[2011-07-14 08:21:23.115] Process:Microsoft.Crm.Sandbox.HostService |Organization:00000000-0000-0000-0000-000000000000 |Thread: 148 |Category: Sandbox |User: 00000000-0000-0000-0000-000000000000 |Level: Error | SandboxHost.AuthenticateCaller >Access Denied. Reference number for administrators or support: #15B34B57: **crm.contoso.cacrmservice is not in PrivUserGroup**
+>[2011-07-14 08:21:23.115] Process:Microsoft.Crm.Sandbox.HostService |Organization:00000000-0000-0000-0000-000000000000 |Thread: 148 |Category: Sandbox |User: 00000000-0000-0000-0000-000000000000 |Level: Error | SandboxHost.AuthenticateCaller >Access Denied. Reference number for administrators or support: #15B34B57: **crm.contoso.cacrmservice is not in PrivUserGroup**
 
-[2011-07-14 08:21:23.130] Process:Microsoft.Crm.Sandbox.HostService |Organization:00000000-0000-0000-0000-000000000000 |Thread: 148 |Category: Exception |User: 00000000-0000-0000-0000-000000000000 |Level: Error | CrmException..ctor
+>[2011-07-14 08:21:23.130] Process:Microsoft.Crm.Sandbox.HostService |Organization:00000000-0000-0000-0000-000000000000 |Thread: 148 |Category: Exception |User: 00000000-0000-0000-0000-000000000000 |Level: Error | CrmException..ctor
 
 The errors themselves are actually quite misleading. I can’t tell you how many times I made sure that the crmservice account was in the PivUserGroup (and for the right organization). 
 

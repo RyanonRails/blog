@@ -10,11 +10,11 @@ categories:
 
 Ever get this error when either trying to install a gem, or running a bundle update (someone’s updated the gemfile)? 
 
-**Fetching: linecache19-0.5.12.gem (100%)  
+>Fetching: linecache19-0.5.12.gem (100%)  
 ERROR: Error installing linecache19:  
-The ‘linecache19′ native gem requires installed build tools.**
+The ‘linecache19′ native gem requires installed build tools.
 
-Please update your PATH to include build tools or download the DevKit from ‘http://rubyinstaller.org/downloads’ and follow the instructions at ‘http://github.com/oneclick/rubyinstaller/wiki/Development-Kit’
+Please update your PATH to include build tools or download the DevKit from http://rubyinstaller.org/downloads and follow the instructions at http://github.com/oneclick/rubyinstaller/wiki/Development-Kit
 
 Going to those links and setting everything up is way to much effort. Here’s a quick way to get everything working. We’re going to use MinGW (Minimalist GNU for Windows) to compile our gems.
 
@@ -36,12 +36,12 @@ Now click Start -> All Programs -> MinGW -> MinGW Shell
 
 Once the shell is open punch in “gem install linecache19″ and you get this beautiful output:
 
-**$ gem install linecache19  
+>$ gem install linecache19  
 Building native extensions. This could take a while…  
 Successfully installed linecache19-0.5.12  
 1 gem installed  
 Installing ri documentation for linecache19-0.5.12…  
-Installing RDoc documentation for linecache19-0.5.12…**
+Installing RDoc documentation for linecache19-0.5.12…
 
 Now you can install gems that have native extensions! And you have a new linux style environment to play around with!
 

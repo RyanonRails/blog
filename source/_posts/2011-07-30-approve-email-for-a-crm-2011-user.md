@@ -10,7 +10,7 @@ categories:
 
 I recently ran into this error when setting up an email router: 
 
-**“This record will not be processed by the e-mail router until its primary e-mail address has been approved by the system administrator.”**
+> This record will not be processed by the e-mail router until its primary e-mail address has been approved by the system administrator.
 
 Here’s how you can approve email in CRM 2011:  
 ![][2]

@@ -1,5 +1,5 @@
 ---
-title: 'Import CRM 2011 Organization Error - You must map your Active Directory user account...;'
+title: 'Import CRM 2011 Organization Error - You must map your Active Directory user account...'
 author: admin
 layout: post
 permalink: 
@@ -9,7 +9,9 @@ categories:
 ---
 
 
-I ran across this error when I was moving an organization from 1 domain into another: “You must map your Active Directory user account to at least one enabled Microsoft Dynamics CRM User who has the System Administrator security role before the organization can be imported.”
+I ran across this error when I was moving an organization from 1 domain into another: 
+
+>You must map your Active Directory user account to at least one enabled Microsoft Dynamics CRM User who has the System Administrator security role before the organization can be imported.
 
 ![][2]
 

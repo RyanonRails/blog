@@ -14,18 +14,20 @@ Parse error on line #: unexpected dedent
 (in c:/project/app/assets/javascripts/backbone/templates/dartboard.jst.eco)
 
 Broken code:
-
-     3 %>
-      teststring
-    
+{% codeblock lang:coffeescript %}
+<% if 7 > 3 %>
+  teststring
+<% end %>
+{% endcodeblock %}
 
 Fixed Code:
+{% codeblock lang:coffeescript %}
+<% if 7 > 3: %>
+  teststring
+<% end %>
+{% endcodeblock %}
 
-     3: %>
-      teststring
-    
-
-Notice the colon, this is telling coffeescript that the next line is indented. It’s document here: [https://github.com/sstephenson/eco][1] it had just slipped my mind.
+Notice the **colon**, this is telling coffeescript that the next line is indented. It’s document here: [https://github.com/sstephenson/eco][1] it had just slipped my mind.
 
  [1]: https://github.com/sstephenson/eco "https://github.com/sstephenson/eco"
 

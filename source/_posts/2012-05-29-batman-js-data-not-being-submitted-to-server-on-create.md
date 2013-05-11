@@ -8,7 +8,7 @@ categories:
 ---
 
 
-I couldn’t figure out why my data wasn’t being submitted up to the server on a POST (create). Turns out that the data-bind are case sensitive. IE:
+I couldn’t figure out why my data wasn’t being submitted up to the server on a POST (create). Turns out that the data-bind's are case sensitive. IE:
 {% codeblock lang:coffeescript %}
 class EST.Section extends Batman.Model
   @resourceName: 'section'

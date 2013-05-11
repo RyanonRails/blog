@@ -17,11 +17,12 @@ You can disable logging, but that’s a pretty big hindrance. My solution was to
 Here’s what you’re going to have to do:
 
 Update your gemfile:
-
-    group :development, :test do
-      gem 'eventmachine', '1.0.0.beta.4.1', :platforms => [:mswin, :mingw]
-      gem 'thin'
-    end
+{% codeblock lang:ruby %}
+group :development, :test do
+  gem 'eventmachine', '1.0.0.beta.4.1', :platforms => [:mswin, :mingw]
+  gem 'thin'
+end
+{% endcodeblock %}
 
 There’s tons of issues with event machine installing on windows, so make sure you’re using that exact version above. Run **bundle install**. And instead of running “rails s”, run “**thin start**” to get your server running.
 
@@ -34,15 +35,17 @@ Windows will produce these errors (hard crash of Ruby):
 Ruby Interpreter (CUI) 1.9.2p290 [i386-mingw32] has stopped working  
 Ruby Interpreter (CUI) 1.9.2p320 [i386-mingw32] has stopped working
 
-**\***|Update** I’m running Ruby 1.9.3p125 and haven’t hit this issue yet using WEBrick. This might be an alternative solution instead of using thin server.
+**Update:** I’m running Ruby 1.9.3p125 and haven’t hit this issue yet using WEBrick. This might be an alternative solution instead of using thin server.
 
-**\***|Update** If you’re working with people using Linux/Mac, something like this might be more suitable. It will ignore these if you’re not on Windows:
+**Update:** If you’re working with people using Linux/Mac, something like this might be more suitable. It will ignore these if you’re not on Windows:
 
-    # le windows
-    platforms :mswin, :mingw do
-      gem 'eventmachine', '1.0.0.beta.4.1'
-      gem 'thin'
-    end
+{% codeblock lang:ruby %}
+# le windows
+platforms :mswin, :mingw do
+  gem 'eventmachine', '1.0.0.beta.4.1'
+  gem 'thin'
+end
+{% endcodeblock %}
 
 Thanks,  
 Ry

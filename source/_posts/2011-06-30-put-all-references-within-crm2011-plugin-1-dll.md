@@ -6,7 +6,6 @@ permalink: /2011/06/30/put-all-references-within-crm2011-plugin-1-dll/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-#
 
 We needed to come up with an alternate solution to ILMerge since we just couldn’t get it to work, or work consistently when creating plugins. We wanted to be able to take 1 .DLL and upload it to the server (via the plugin tool) to the database.
 
@@ -35,31 +34,46 @@ Right click your project -> Click Unload Project (it will go grey and say unavai
 Right click your project again -> Click .csproj
 
 Scroll down to the bottom and find this line:
-
-
-
+{% codeblock lang:xml %}
+<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+{% endcodeblock %}
 
 Now paste this code underneath the comments (I like to keep the comments intact):
-
-
-
-
-            %(ReferenceCopyLocalPaths.DestinationSubDirectory)%(ReferenceCopyLocalPaths.Filename)%(ReferenceCopyLocalPaths.Extension)
-
-
-
+{% codeblock lang:xml %}
+<Target Name="AfterResolveReferences">
+  <ItemGroup>
+    <EmbeddedResource Include="@(ReferenceCopyLocalPaths)" Condition="'%(ReferenceCopyLocalPaths.Extension)' == '.dll'">
+      <LogicalName>%(ReferenceCopyLocalPaths.DestinationSubDirectory)%(ReferenceCopyLocalPaths.Filename)%(ReferenceCopyLocalPaths.Extension)</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Target>
+{% endcodeblock %}
 
 It should look something like this now:
-
-
-
-
-
-
-            %(ReferenceCopyLocalPaths.DestinationSubDirectory)%(ReferenceCopyLocalPaths.Filename)%(ReferenceCopyLocalPaths.Extension)
-
-
-
+{% codeblock lang:xml %}
+<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+<!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+     Other similar extension points exist, see Microsoft.Common.targets.
+<Target Name="BeforeBuild">
+</Target>
+<Target Name="AfterBuild">
+</Target>
+-->
+<Target Name="AfterResolveReferences">
+  <ItemGroup>
+    <EmbeddedResource Include="@(ReferenceCopyLocalPaths)" Condition="'%(ReferenceCopyLocalPaths.Extension)' == '.dll'">
+      <LogicalName>%(ReferenceCopyLocalPaths.DestinationSubDirectory)%(ReferenceCopyLocalPaths.Filename)%(ReferenceCopyLocalPaths.Extension)</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Target>
+{% endcodeblock %}
 
 Now, you need to set **ONLY** the references that you want to copy into the DLL as “Copy Local” = true. As an example, I would like to include Xrm.DLL in my project, so it set it’s “Copy Local” to true.
 
@@ -67,36 +81,38 @@ Now, you need to set **ONLY** the references that you want to copy into the DLL 
 
  [3]: /images/old/Copy_Local_True.png
 
-Now, we can reload our project by Right clicking our project -> Reload Project. Open up your plugin and add this event handler:
+Now, we can reload our project by Right clicking our project -> Reload Project. Open up your plugin and add this event handler:  
 
-    private static Assembly OnResolveAssembly(object sender, ResolveEventArgs args)
-    {
-    
-        Assembly executingAssembly = Assembly.GetExecutingAssembly();
-        AssemblyName assemblyName = new AssemblyName(args.Name);
-        string path = assemblyName.Name   ".dll";
-    
-        if (assemblyName.CultureInfo.Equals(CultureInfo.InvariantCulture) == false)
-        {
-             path = String.Format(@"{0}{1}", assemblyName.CultureInfo, path);
-         }
-    
-        using (Stream stream = executingAssembly.GetManifestResourceStream(path))
-        {
-             if (stream == null)
-                 return null;
-             byte[] assemblyRawBytes = new byte[stream.Length];
-             stream.Read(assemblyRawBytes, , assemblyRawBytes.Length);
-             return Assembly.Load(assemblyRawBytes);
-        }
-    }
-
+{% codeblock lang:csharp %}
+private static Assembly OnResolveAssembly(object sender, ResolveEventArgs args)
+{
+   
+  Assembly executingAssembly = Assembly.GetExecutingAssembly();
+  AssemblyName assemblyName = new AssemblyName(args.Name);
+  string path = assemblyName.Name + ".dll";
+  
+  if (assemblyName.CultureInfo.Equals(CultureInfo.InvariantCulture) == false)
+  {
+     path = String.Format(@"{0}\{1}", assemblyName.CultureInfo, path);
+  }
+  
+  using (Stream stream = executingAssembly.GetManifestResourceStream(path))
+  {
+       if (stream == null)
+           return null;
+       byte[] assemblyRawBytes = new byte[stream.Length];
+       stream.Read(assemblyRawBytes, 0, assemblyRawBytes.Length);
+       return Assembly.Load(assemblyRawBytes);
+  }
+}
+{% endcodeblock %}
 In a static constructor, we need to hook up the event handler. Add this code:
-
-    static TestEntityPlugin()
-    {
-        AppDomain.CurrentDomain.AssemblyResolve  = OnResolveAssembly;
-    }
+{% codeblock lang:csharp %}
+static TestEntityPlugin()
+{
+  AppDomain.CurrentDomain.AssemblyResolve  = OnResolveAssembly;
+}
+{% endcodeblock %}
 
 You should now be able to compile your DLL! You won’t notice any differences in Visual Studio, but if you use .NET reflector to view the .DLL you’ll notice that the references (with “Copy Local” = true) are within the DLL now.
 
@@ -104,6 +120,7 @@ Basically what’s happening is when the DLL is used, it looks within itself to 
 
 Caveats:
 The plugin must be registered as “Non-sandbox” in order to have the permissions to use the AssemblyResolve event handler.
+
 ![][4]
 
  [4]: /images/old/Non_Sandbox.png

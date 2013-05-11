@@ -17,19 +17,20 @@ If you’re trying to get batman.js trying to run within visual studio & IIS 7.5
 
 From what I understand, IIS doesn’t know what type of MIME type coffeescript is, so it doesn’t serve it out, here’s what you need in your web.config for it to work properly (put in my whole web.config):
 
-    
-      
-        
-      
-    
-      
-        
-        
-          
-        
-      
-    
-
+{% codeblock lang:xml %}
+<configuration>
+  <system.web>
+    <compilation debug="true" targetFramework="4.0"/>
+  </system.web>
+ 
+  <system.webServer>
+    <httpErrors errorMode="Detailed" />
+    <staticContent>
+      <mimeMap fileExtension=".coffee" mimeType="coffeescript" />
+    </staticContent>
+  </system.webServer>
+</configuration>
+{% endcodeblock %}
 I gleaned some information from [this SO article][1].
 
  [1]: http://stackoverflow.com/questions/9760034/what-causes-a-404-4-on-iis-7-5-for-delivering-a-static-file "this SO article"

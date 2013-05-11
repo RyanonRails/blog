@@ -110,7 +110,7 @@ Punch in a Title name for the CRM Server. In the URL point it to Sites, and then
 
 The Farm Configuration is complete now! 
 
-Click Finish. Now you can go to http:///sites/CRMSharepointTest and you will see your SharePoint server.
+Click Finish. Now you can go to http://sites/CRMSharepointTest and you will see your SharePoint server.
 
 ![][15]
 

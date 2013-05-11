@@ -11,7 +11,7 @@ categories:
 Ran into this error when testing out eco (Embedded Coffee Script) templates.
 
 Parse error on line #: unexpected dedent  
-(in c:/project/app/assets/javascripts/backbone/templates/dartboard.jst.eco)
+(in C:/project/app/assets/javascripts/backbone/templates/dartboard.jst.eco)
 
 Broken code:
 {% codeblock lang:coffeescript %}

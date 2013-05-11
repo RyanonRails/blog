@@ -25,22 +25,22 @@ Interestingly enough, back in CRM 4.0, according to the documentation located [h
 Onto the good stuff (follow these in order):
 
 Setting up Virtual Box:  
-
+http://www.ryanonrails.com/2011/02/21/setting-up-virtual-box-for-crm-2011-development/
 
 Setting up Server 2008 R2:  
-
+http://www.ryanonrails.com/2011/02/21/server-2008-r2-setup-installation-for-crm-2011-development/
 
 Enabling Virtual Box Guest Additions:  
-
+http://www.ryanonrails.com/2011/02/21/installing-guest-additions-for-an-oracle-virtual-box-machine/
 
 Setting up SQL Server 2008 R2:  
-
+http://www.ryanonrails.com/2011/02/21/installing-sql-server-2008-r2-for-crm-2011-development/
 
 Creating a Domain Controller (as CRM 2011 needs one):  
-
+http://www.ryanonrails.com/2011/02/21/creating-a-domain-controller/
 
 Installing CRM 2011:  
-
+http://www.ryanonrails.com/2011/02/21/installing-crm-rtm-2011-for-development/
 
 Some of the articles will be updated in the future to provide some consistency, however I feel getting this up sooner than later might help some people out.
 

@@ -10,7 +10,7 @@ categories:
 
 We’re going to need to download CRM 2011RTM (90 day trial). Link: 
 
-Once downloaded, it will prompt you for a folder to drop the CRM installation files into. I created C:CRM for this purpose. 
+Once downloaded, it will prompt you for a folder to drop the CRM installation files into. I created C:\CRM for this purpose. 
 
 Next prompt will be about updates. Make sure Get updates from Microsoft Dynamics CRM is clicked. Click Next
 

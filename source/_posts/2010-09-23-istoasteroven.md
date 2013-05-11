@@ -4,18 +4,19 @@ author: admin
 layout: post
 permalink: /2010/09/23/istoasteroven/
 categories:
-  - Old School
+  - SmallTalk
 ---
 
 
 As I was cleaning up some old depreciated code in one of my works Smalltalk images I came across this method:
-
-    isToasterOven
-    "---------------------------------------------
-    Description:
-            Answer true if I am.
-    ---------------------------------------------"
-            ^(OS getSystemMetrics: SmSlowmachine) = 1
+{% codeblock lang:smalltalk %}
+isToasterOven
+"---------------------------------------------
+Description:
+        Answer true if I am.
+---------------------------------------------"
+        ^(OS getSystemMetrics: SmSlowmachine) = 1
+{% endcodeblock %}
 
 isToasterOven? isBestMethodEver?
 

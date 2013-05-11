@@ -12,7 +12,7 @@ CRM needs a domain controller (to manage users/auth essentially) so let’s conv
 
 Click Start -> Run, and type in “dcpromo” then hit enter. What should come up is a Active Directory Domain Services Installation Wizard. Click Next.
 
-![DC promo][2]
+![][2]
 
  [2]: /images/old/DC_dcpromo.png
 
@@ -20,7 +20,7 @@ On the Operating System Compatibility screen, click Next
 
 On the Choose a deployment configuration, click “Create a new domain in a new forest”, then click Next.
 
-![DC forest level][3]
+![][3]
 
  [3]: /images/old/DC_Forst_Level.png
 
@@ -32,25 +32,25 @@ Now we need to enter in a FQDN (a .com). As this is just a dev box, punch in cor
 
 Set forest functionality level to “Windows Server 2008 R2”, click Next.
 
-![DC forest level][5]
+![][5]
 
  [5]: /images/old/DC_Forst_Level.png
 
 Additional Domain Controller Options, Make sure DNS Server is checked, click Next
 
-![DC DNS][6]
+![][6]
 
  [6]: /images/old/DC_DNS.png
 
 In a normal world you’d want to set a static ip on a domain controller, again, since this is a dev box, I just go with an IP from the DHCP server. Click Yes.
 
-![DC DHCP][7]
+![][7]
 
  [7]: /images/old/DC_DHCP.png
 
 If you get this error, click next.
 
-![DC Delegation][8]
+![][8]
 
  [8]: /images/old/DC_Delegation.png
 

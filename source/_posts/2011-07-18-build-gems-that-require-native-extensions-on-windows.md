@@ -23,7 +23,7 @@ Head over to [http://www.mingw.org/wiki/Getting_Started][1] and read under “Gr
  [1]: http://www.mingw.org/wiki/Getting_Started "http://www.mingw.org/wiki/Getting_Started"
  [2]: http://sourceforge.net/projects/mingw/files/Automated MinGW Installer/mingw-get-inst/ "link"
 
-Run the .exe, click Next, Next, Make sure “Use pre-packaged repository catalogs” is selected, Select the agreement, I use the default C:MinGW on the next step, Next on the start menu, I use the following: 
+Run the .exe, click Next, Next, Make sure “Use pre-packaged repository catalogs” is selected, Select the agreement, I use the default C:\MinGW on the next step, Next on the start menu, I use the following: 
 
 *   C Compiler
 *   ObjC Compiler

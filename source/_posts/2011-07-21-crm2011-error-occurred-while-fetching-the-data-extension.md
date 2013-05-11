@@ -23,7 +23,7 @@ I first check that all of my SSRS 2008 R2 services were started. They seemed oka
 
 >Web service request ListExtensions to Report Server http://crm.contoso.com/ReportServer/ReportService2005.asmx failed. Error: The request failed with HTTP status 404: Not Found.
 
-From this error I can infer that CRM can’t find my reporting services. That path didn’t even exit (when I try and go to it). At this point I clued in that I had changed the SSRS’s virtual directory earlier on. I changed it to ReportServer**_MSSQL** (for other reasons). Here’s what it looks like:
+From this error I can infer that CRM can’t find my reporting services. That path didn’t even exit (when I try and go to it). At this point I clued in that I had changed the SSRS’s virtual directory earlier on. I changed it to ReportServer_MSSQL (for other reasons). Here’s what it looks like:
 
 ![][3]
 

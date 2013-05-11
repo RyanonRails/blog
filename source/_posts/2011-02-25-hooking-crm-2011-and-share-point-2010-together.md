@@ -6,7 +6,7 @@ permalink: /2011/02/25/hooking-crm-2011-and-share-point-2010-together/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 CRM2011 – SharePoint 2010 Integration? Glue CRM 2011 & Share Point 2010 together? Make CRM 2011 and Share Point 2010 converse? I wasn’t sure what to call this exactly. “Hooking together” works for me!
 

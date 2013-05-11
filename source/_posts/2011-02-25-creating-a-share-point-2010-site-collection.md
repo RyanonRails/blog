@@ -6,7 +6,7 @@ permalink: /2011/02/25/creating-a-share-point-2010-site-collection/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 Now we need a site collection for that Share Point site we created. Connect to http://localhost:48835 (Central Admin Server).
 

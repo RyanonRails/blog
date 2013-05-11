@@ -6,7 +6,7 @@ permalink: /2011/02/21/setting-up-virtual-box-for-crm-2011-development/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 Here’s how we can setup the base image for the CRM installation.
 

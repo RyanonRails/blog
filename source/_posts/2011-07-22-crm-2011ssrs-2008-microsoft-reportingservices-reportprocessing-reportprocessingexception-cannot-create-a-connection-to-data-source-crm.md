@@ -7,7 +7,7 @@ permalink:
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 While using a plugin that uses NetworkCredentials I ran into this issue: 
 

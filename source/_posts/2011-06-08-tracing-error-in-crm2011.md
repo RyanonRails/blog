@@ -6,7 +6,7 @@ permalink: /2011/06/08/tracing-error-in-crm2011/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 We recently moved to a new server and I was getting this error:
 

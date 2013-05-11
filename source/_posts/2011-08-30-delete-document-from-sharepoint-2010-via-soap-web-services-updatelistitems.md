@@ -7,7 +7,7 @@ permalink:
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 Delete a document from SharePoint 2010. You NEED both the ID and the FileRef.
 

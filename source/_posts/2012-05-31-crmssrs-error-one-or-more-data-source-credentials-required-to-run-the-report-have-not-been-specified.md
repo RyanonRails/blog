@@ -7,7 +7,6 @@ permalink:
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
 
 I ran into this error again. I think I’ve got it all figured out. Here’s the excerpt from the log:
 
@@ -17,7 +16,9 @@ My current setup is this. I have regular MSCRM_FetchDataSource reports using **C
 
 The error actually stems from the fact that the username and password being passed to SSRS from the plugin isn’t getting populated. The SRS data connector that you install for CRM passes these values back and for you for the out of box reports. For whatever reason, this code will not populate those fields:
 
-    return ReportService.RenderReport(reportUrl, _networkCredential, reportPath, parameters, "PDF", devInfo, "en-us");
+{% codeblock lang:csharp %}
+return ReportService.RenderReport(reportUrl, _networkCredential, reportPath, parameters, "PDF", devInfo, "en-us");
+{% endcodeblock %}
 
 In this situation I’ve found the best course of action is to set your data source as follows:
 

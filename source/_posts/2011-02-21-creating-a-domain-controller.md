@@ -6,7 +6,7 @@ permalink: /2011/02/21/creating-a-domain-controller/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 CRM needs a domain controller (to manage users/auth essentially) so let’s convert our server into a domain controller.
 

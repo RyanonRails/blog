@@ -6,7 +6,7 @@ permalink: /2010/09/01/creating-alertzy-com-apps4edmonton/
 categories:
   - Ruby on Rails
 ---
-# 
+
 
 This is abit of a read, but I tried to cover everything. I’m going to create this is a timeline format. Hopefully I don’t fail.
 

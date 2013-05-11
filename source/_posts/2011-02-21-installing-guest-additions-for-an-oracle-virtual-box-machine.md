@@ -6,7 +6,7 @@ permalink: /2011/02/21/installing-guest-additions-for-an-oracle-virtual-box-mach
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 One of the more annoying things is that you constantly have to hit “CTRL” to exit your mouse out of the virtual machine. We can fix that by installing the Guest Additions provided by Virtual Box. The Additions are built directly into the image.
 

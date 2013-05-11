@@ -6,7 +6,7 @@ permalink: /2011/02/21/server-2008-r2-setup-installation-for-crm-2011-developmen
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 Before we start setting up Server 2008 R2, the default way to break out of the VM back into windows is “CTRL”
 

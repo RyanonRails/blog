@@ -6,7 +6,7 @@ permalink: /2011/04/14/error-installing-redcar-install-java/
 categories:
   - Ruby on Rails
 ---
-# 
+
 
 Are you receiving this redcar error?
 

@@ -6,7 +6,7 @@ permalink: /2011/06/08/crm2011-tracing-error-ssrs-issue/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 I was getting this System.Security.SecurityException because my SSRS datasource settings were incorrect:
 

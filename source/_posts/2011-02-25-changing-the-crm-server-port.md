@@ -6,7 +6,7 @@ permalink: /2011/02/25/changing-the-crm-server-port/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 To make sure we can access the CRM Server we need to change the port. It will help us specify what it’s accessing. CRM and Share Point are pointed at port 80 right now (which is bad).
 

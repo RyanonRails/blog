@@ -7,7 +7,7 @@ permalink:
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 I ran across this error when I was moving an organization from 1 domain into another: “You must map your Active Directory user account to at least one enabled Microsoft Dynamics CRM User who has the System Administrator security role before the organization can be imported.”
 

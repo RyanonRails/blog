@@ -6,7 +6,7 @@ permalink: /2011/02/22/setting-up-a-crm-2011-virtual-machine-on-a-domain-control
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 Hi Everyone,
 

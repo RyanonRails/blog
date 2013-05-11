@@ -6,7 +6,7 @@ permalink: /2010/08/18/redirect-refresh-your-current-page/
 categories:
   - Ruby on Rails
 ---
-# 
+
 
 I’m not sure why I was unable to find this out on the internet, but here’s the simple piece of code you need in your controller to refresh your page:
 

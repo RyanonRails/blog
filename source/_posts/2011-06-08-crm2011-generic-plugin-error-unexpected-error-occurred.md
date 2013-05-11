@@ -6,7 +6,7 @@ permalink: /2011/06/08/crm2011-generic-plugin-error-unexpected-error-occurred/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 I truly hope you don’t end up getting this error:
 

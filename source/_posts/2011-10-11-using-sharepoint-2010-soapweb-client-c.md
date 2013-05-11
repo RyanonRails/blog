@@ -6,7 +6,7 @@ permalink: /2011/10/11/using-sharepoint-2010-soapweb-client-c/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 I’ve been meaning to post this for a while since I had some annoying issues with CAML and Sharepoint 2010. Here’s the structure I’m using:
 

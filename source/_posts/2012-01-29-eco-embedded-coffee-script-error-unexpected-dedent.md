@@ -6,7 +6,7 @@ permalink: /2012/01/29/eco-embedded-coffee-script-error-unexpected-dedent/
 categories:
   - Javascript
 ---
-# 
+
 
 Ran into this error when testing out eco (Embedded Coffee Script) templates.
 

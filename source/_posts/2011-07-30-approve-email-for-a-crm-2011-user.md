@@ -6,7 +6,7 @@ permalink: /2011/07/30/approve-email-for-a-crm-2011-user/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 I recently ran into this error when setting up an email router: 
 

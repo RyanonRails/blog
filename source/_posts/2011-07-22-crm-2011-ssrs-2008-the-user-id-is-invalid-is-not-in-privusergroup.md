@@ -6,7 +6,7 @@ permalink: /2011/07/22/crm-2011-ssrs-2008-the-user-id-is-invalid-is-not-in-privu
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 I had changed my CRMAppPool account (to a domain user) and started to receive these errors: 
 

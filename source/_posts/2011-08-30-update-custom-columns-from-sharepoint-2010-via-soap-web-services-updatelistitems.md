@@ -7,7 +7,7 @@ permalink:
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 Here’s a query to update a file’s custom columns in SharePoint 2010.
 

@@ -6,7 +6,7 @@ permalink: /2011/10/11/download-a-document-from-sharepoint-2010-via-webclient/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 Here’s how I use the WebClient object to download a pdf from Sharepoint 2010:
 

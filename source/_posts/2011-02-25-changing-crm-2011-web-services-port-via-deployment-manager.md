@@ -6,7 +6,7 @@ permalink: /2011/02/25/changing-crm-2011-web-services-port-via-deployment-manage
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 Web services don’t work when we access them from Settings -> Developer Resources! It’s because we changed our port to 85 and we haven’t updated the web services location to 85 (when I changed the bindings)! This means that it’s actually pointing at the Share Point web services (and it bombs out). Open up deployment manager.
 

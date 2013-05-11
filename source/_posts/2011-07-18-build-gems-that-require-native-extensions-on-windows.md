@@ -6,7 +6,7 @@ permalink: /2011/07/18/build-gems-that-require-native-extensions-on-windows/
 categories:
   - Ruby on Rails
 ---
-# 
+
 
 Ever get this error when either trying to install a gem, or running a bundle update (someone’s updated the gemfile)? 
 

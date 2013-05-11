@@ -7,7 +7,7 @@ permalink:
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 I just ran into this when trying to validate a SharePoint (2010) site from within CRM2011. Here’ what I did to solve it:
 

@@ -7,7 +7,7 @@ permalink:
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 Here’s a call to SharePoint 2010 for creating a folder. Note the RootFolder.
 

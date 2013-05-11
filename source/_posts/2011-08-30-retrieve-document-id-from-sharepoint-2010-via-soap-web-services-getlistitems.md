@@ -7,7 +7,7 @@ permalink:
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 Get a specific item from a SharePoint 2010 library using GetListItems.
 

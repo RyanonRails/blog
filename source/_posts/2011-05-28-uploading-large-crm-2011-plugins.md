@@ -6,7 +6,7 @@ permalink: /2011/05/28/uploading-large-crm-2011-plugins/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 You may notice that if you try and upload(register) a plugin > 1024 KB you’ll get an error similar to this (sorry for the shoddy formatting):
 

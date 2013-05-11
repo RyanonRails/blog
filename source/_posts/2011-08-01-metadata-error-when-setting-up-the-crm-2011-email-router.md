@@ -6,7 +6,7 @@ permalink: /2011/08/01/metadata-error-when-setting-up-the-crm-2011-email-router/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 Here’s a new error I ran into when setting up the email router:
 

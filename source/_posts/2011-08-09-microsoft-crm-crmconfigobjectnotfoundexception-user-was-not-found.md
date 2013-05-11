@@ -6,7 +6,7 @@ permalink: /2011/08/09/microsoft-crm-crmconfigobjectnotfoundexception-user-was-n
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 Whenever I ran a report in SSRS I kept getting: 
 

@@ -6,7 +6,7 @@ permalink: /2012/04/23/ruby-rails-stops-respondin/
 categories:
   - Ruby on Rails
 ---
-# 
+
 
 A friend ran into a bug that I had already conquered. I figure that if we both have the issue, other people might also.
 

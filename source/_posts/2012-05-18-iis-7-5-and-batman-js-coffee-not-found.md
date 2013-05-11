@@ -6,7 +6,7 @@ permalink: /2012/05/18/iis-7-5-and-batman-js-coffee-not-found/
 categories:
   - Javascript
 ---
-# 
+
 
 If you’re trying to get batman.js trying to run within visual studio & IIS 7.5 you’re going to run into some issues serving up coffeescript files to batman. 
 

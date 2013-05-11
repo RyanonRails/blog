@@ -7,7 +7,7 @@ permalink:
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 I recently ran into this error **AGAIN** while trying to run the Document Manager in CRM 2011: **“An error occurred while loading the page. The URL may not have been mapped in the SharePoint Server. Ask your system administrator to check the Configure alternate access mappings settings in the SharePoint Central Administration.”**
 

@@ -6,7 +6,7 @@ permalink: /2011/03/16/best-crm-2011-bug-found/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 NINETY FIVE PERCENT. It’s the magical number that you need to change your zoom (CTRL Mouse Wheel Down) or click the zoom down in the bottom of IE 8.
 

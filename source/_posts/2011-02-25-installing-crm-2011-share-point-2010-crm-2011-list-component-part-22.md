@@ -7,7 +7,7 @@ permalink:
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 Now onto the nitty gritty! Let’s get CRM 2011 / Share Point 2010 / CRM 2011 List Component installed and configured.
 

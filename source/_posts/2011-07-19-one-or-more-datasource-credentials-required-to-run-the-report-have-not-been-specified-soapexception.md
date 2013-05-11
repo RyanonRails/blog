@@ -7,7 +7,7 @@ permalink:
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 I kept getting the error **“One or more datasource credentials required to run the report have not been specified”** when I was trying to run an SSRS report. Turns out I needed to set the MSCRM_FetchDataSource to Windows Integrated Security (as that’s how I was accessing the reports).  
 Must have missed that when I was setting up SSRS!

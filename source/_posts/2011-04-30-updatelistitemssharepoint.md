@@ -6,7 +6,7 @@ permalink: /2011/04/30/updatelistitemssharepoint/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 Quick explanation of how UpdateListItems (sharepoint web service) works when trying to add a folder to a document library.
 

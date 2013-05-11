@@ -6,7 +6,7 @@ permalink: /2011/03/06/customize-sitemap-locales-crm-2011/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 How to customize sitemap locales!
 

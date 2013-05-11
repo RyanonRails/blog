@@ -6,7 +6,7 @@ permalink: /2011/02/25/installing-configuring-sharepoint-2010/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 Let’s load up the Share Point 2010 ISO. Click Devices -> CD/DVD Devices -> Choose a virtual CD/DVD disk file -> Pick the Share Point 2010 64 bit ISO. Then choose “Install software prerequisites”
 

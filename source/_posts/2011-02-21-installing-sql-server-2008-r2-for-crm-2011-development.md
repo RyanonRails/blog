@@ -6,7 +6,7 @@ permalink: /2011/02/21/installing-sql-server-2008-r2-for-crm-2011-development/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 We’re going to need to load up the ISO/CD/DVD.
 

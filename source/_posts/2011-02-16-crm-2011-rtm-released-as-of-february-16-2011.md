@@ -6,7 +6,7 @@ permalink: /2011/02/16/crm-2011-rtm-released-as-of-february-16-2011/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 Here’s all the information needed for CRM 2011 RTM!
 

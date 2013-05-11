@@ -6,7 +6,7 @@ permalink: /2010/08/18/ruby-on-rails-windows-style/
 categories:
   - Ruby on Rails
 ---
-# 
+
 
 I’m a Ruby on Rails developer who develops in Windows XP.
 

@@ -6,7 +6,7 @@ permalink: /2011/02/25/creating-a-web-application-and-share-point-2010-site/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 After you’ve pointed CRM over to port 85, let’s head back into our Share Point Central Administration Site. 
 

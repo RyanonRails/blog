@@ -7,7 +7,7 @@ permalink:
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
-# 
+
 
 I’ve just started using EntityFramework.Migrations and came accross this error:
 

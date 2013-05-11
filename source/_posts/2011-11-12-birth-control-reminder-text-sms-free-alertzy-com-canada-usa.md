@@ -6,7 +6,7 @@ permalink: /2011/11/12/birth-control-reminder-text-sms-free-alertzy-com-canada-u
 categories:
   - Alertzy
 ---
-# 
+
 
 Hey Everyone,
 

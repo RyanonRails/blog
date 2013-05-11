@@ -8,7 +8,7 @@ categories:
 tags:
   - CRM2011
 ---
-# 
+
 
 I recently received this error when trying to validate a SharePoint site with the list component: The URL schemes of Microsoft Dynamics CRM and SharePoint Server are different. This error prevented me from validating the SharePoint site.
 

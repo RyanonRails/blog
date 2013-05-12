@@ -2,6 +2,7 @@ require "rubygems"
 require "bundler/setup"
 require "stringex"
 
+
 ## -- Rsync Deploy config -- ##
 # Be sure your public key is listed in your server's ~/.ssh/authorized_keys file
 ssh_user       = "user@domain.com"
@@ -9,7 +10,10 @@ ssh_port       = "22"
 document_root  = "~/website.com/"
 rsync_delete   = false
 rsync_args     = ""  # Any extra arguments to pass to rsync
-deploy_default = "rsync"
+
+#S3 deploy overrides
+deploy_default = "s3"
+s3_bucket = "ryanonrails.com"
 
 # This will be configured for you when you run config_deploy
 deploy_branch  = "gh-pages"
@@ -380,4 +384,10 @@ desc "list tasks"
 task :list do
   puts "Tasks: #{(Rake::Task.tasks - [Rake::Task[:list]]).join(', ')}"
   puts "(type rake -T for more detail)\n\n"
+end
+
+desc "Deploy website via s3cmd with CloudFront cache invalidation"
+task :s3 do
+  puts "## Deploying website via s3cmd"
+  ok_failed system("s3cmd sync --acl-public --reduced-redundancy public/* s3://#{s3_bucket}/")
 end

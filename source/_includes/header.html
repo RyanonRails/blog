@@ -36,5 +36,8 @@
 		{% if site.subscribe_rss %}
 		<a class="rss" href="{{ site.subscribe_rss }}" title="RSS">RSS</a>
 		{% endif %}
+    {% if site.stackoverflow_user %}
+    <a class="stackoverflow" href="http://stackoverflow.com/{{ site.stackoverflow_user }}" title="stackoverflow">Stackoverflow</a>
+    {% endif %}
 	</div>
 </nav>

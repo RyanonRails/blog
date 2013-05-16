@@ -383,6 +383,13 @@ $header-height: 30px;
 					border: 1px solid darken(#EF7522, 10%);
 				}
 			}
+      &.stackoverflow{
+        background: image-url('social/stackoverflow.png') center no-repeat #EF7522;
+        border: 1px solid #EF7522;
+        &:hover{
+          border: 1px solid darken(#EF7522, 10%);
+        }
+      }
 		}
 	}
 }

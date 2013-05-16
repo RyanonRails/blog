@@ -4,15 +4,13 @@ title: "Hosting Octopress with Amazon S3 and Cloudfront"
 date: 2013-05-13 20:29
 comments: false
 categories:
- categories:
-   - Amazon S3
-   - Amazon CloudFront
-   - Octopress
+ - Amazon S3
+ - Amazon CloudFront
+ - Octopress
 ---
 
 I recently set up this blog and I figured as my first "real" post I could go through the steps it took to set this up.
-I gleaned quite a bit of information from quite a few sites, but overall I didn't find a guide that explained everything thoroughly.
-I've made sure to include all of my references in the bottom of the post.
+I gleaned quite a bit of information from quite a few sites, but I still felt there could be some improvements on this topic. I've made sure to include all of my references in the bottom of the post.
 
 #### Creating the site 
 
@@ -66,7 +64,7 @@ It should end up writing a file in ~/.s3cfg which contains your amazon credentia
 
 #### Deploy to Amazon S3 static site
 
-There's a great rake task located [here](http://www.jerome-bernard.com/blog/2011/08/20/quick-tip-for-easily-deploying-octopress-blog-on-amazon-cloudfront/) that we'll leverage:
+There's a great rake task located [here](http://www.jerome-bernard.com/blog/2011/08/20/quick-tip-for-easily-deploying-octopress-blog-on-amazon-cloudfront/) that we'll leverage.
 Paste this at the bottom of your Rakefile:
 
 {% codeblock lang:ruby %}
@@ -83,7 +81,7 @@ Within the Rakefile you'll need to setup a few variables:
 # find deploy_default = "rsync" and replace it with 
 deploy_default = "s3" 
 
-# and then add the line 
+# and then add this line underneath it
 s3_bucket = "www.yourdomain.com"
 {% endcodeblock %}
 
@@ -123,25 +121,47 @@ And if you select it and click edit, the General and Origins tab:
 ![][6]
  [6]: /images/posts/cloudfront_origins.png
 
-We add the CNAME so when a request comes in for ryanonrails.com it can match the url's up properly. This will make more sense when we setup our DNS.
+We add the CNAME so when a request comes in for www.ryanonrails.com it can match the url's up properly. This will make more sense when we setup our DNS.
 
-It will take about 10-15 minutes to distribute across the globe. Once it's finished you should be able to visit your site through your **CloudFront Domain Name** (not to be mistaken with www.yourdomain.com). 
+It will take about 10-15 minutes to distribute across the globe. Once it's finished you should be able to visit your site through your **CloudFront Domain Name** (not to be mistaken with 'www.yourdomain.com'). 
 IE: http://d231akc98dz4lc.cloudfront.net/index.html (which will show you the index page of my blog) or http://d231akc98dz4lc.cloudfront.net/blog/archives/ (my archive).
 
-Update DNS
+#### Updating your DNS settings
+
+We'll need to change up our DNS settings to make sure that www.yourdomain.com now points to the CloudFront Domain Name. You'll need to set your A Record to 174.129.25.170
+and create a www CNAME that points to your Cloudfront Domain Name. Here's my setup on GoDaddy:
+
+![][7]
+ [7]: /images/posts/dns_settings.png
+
+By pointing our A record to 174.129.25.170 it actually leverages a service called WWWizer which takes our domain 'yourdomain.com' and redirects it to 'www.yourdomain.com'. 
+The reason we have to do this is because you can't actually point an A record at a URL like you can a CNAME, but we need a way that if you hit 'yourdomain.com' it takes you to the www version of the site.
+More information on this [here](http://stackoverflow.com/questions/8312162/static-hosting-on-amazon-s3-dns-configuration).
+
+At this point if someone requests www.ryanonrails.com/index.html it sends it to clou
+
+#### Cloudfront cache invalidation
+
+By default in our rake task we pass in ```--cf-invalidate``` to s3cmd. This will invalidate any of the files that are out of date on our blog.
+This is useful since we generally want to see our blog post up and live once we post. You can monitor the invalidation job in the Invalidations tab in CloudFront:
+
+![Example invalidation][8]
+
+ [8]: /images/posts/invalidation_cf.png
+
+Once it finishes you should be able to reload 'wwww.yourdomain.com' and see your latest blog post (or typo fix ;)).
+
+#### Potential problems
+
+I ran into a few problems while setting this all up. The first was that I named my bucket 'ryanonrails.com' without the www., 
+this caused problems once I implemented the WWWizer service and it ended up redirecting to a bucket that didn't exist ('www.ryanonrails.com' at the time).
+Another problem was that I set a Default Root Object on my CloudFront distribution. 
+This broke any sub directories (such as 'www.ryanonrails.com/blog/archives'). From what I understand, this would be used on an S3 bucket that wasn't set up as a static site.
 
 
+References:  
 
-
-References:
-* http://www.snikt.net/blog/2012/11/03/moving-octopress-to-amazon-s3-and-cloudfront/ (general information on the setup, speedtest chart)
-* http://stackoverflow.com/questions/15309113/amazon-cloudfront-doesnt-respect-my-s3-website-buckets-index-html-rules (specify custom origin in cloudfront)
-* http://stackoverflow.com/questions/1268158/force-cloudfront-distribution-file-update (CloudFront invalidation)
-* http://stackoverflow.com/questions/8312162/static-hosting-on-amazon-s3-dns-configuration (A record for DNS, naked domain to www)
-* http://populationjim.com/2011/02/21/install-and-setup-s3cmd-on-a-mac/ (s3cmd on a mac)
-
-
-Problems? 
-
-Default root on cloudfront = bad
-Invalidating Cache
+-  http://www.snikt.net/blog/2012/11/03/moving-octopress-to-amazon-s3-and-cloudfront/ (general information on the setup, speedtest chart)
+-  http://stackoverflow.com/questions/15309113/amazon-cloudfront-doesnt-respect-my-s3-website-buckets-index-html-rules (specify custom origin in cloudfront)
+-  http://stackoverflow.com/questions/1268158/force-cloudfront-distribution-file-update (CloudFront invalidation)
+-  http://populationjim.com/2011/02/21/install-and-setup-s3cmd-on-a-mac/ (build s3cmd on a mac)

@@ -16,13 +16,10 @@
 		<a class="google" href="https://plus.google.com/{{ site.googleplus_user }}" rel="author" title="Google+">Google+</a>
 		{% endif %}
 		{% if site.twitter_user %}
-		<a class="twitter" href="http://twitter.com/{{ site.twitter_user }}" title="Twitter">Twitter</a>
+		<a class="twitter" href="http://twitter.com/{{ site.twitter_user }}" title="twitter">Twitter</a>
 		{% endif %}
 		{% if site.github_user %}
-		<a class="github" href="https://github.com/{{ site.github_user }}" title="GitHub">GitHub</a>
-		{% endif %}
-		{% if site.linkedin_user %}
-		<a class="linkedin" href="http://www.linkedin.com/in/{{ site.linkedin_user }}">LinkedIn</a>
+		<a class="github" href="https://github.com/{{ site.github_user }}" title="github">GitHub</a>
 		{% endif %}
 		{% if site.pinterest_user %}
 		<a class="pinterest" href="https://pinterest.com/{{ site.pinterest_user }}" title="Pinterest">Pinterest</a>
@@ -34,8 +31,11 @@
 		<a class="pinboard" href="https://pinboard.in/u:{{ site.pinboard_user }}" title="Pinboard">Pinboard</a>
 		{% endif %}
 		{% if site.subscribe_rss %}
-		<a class="rss" href="{{ site.subscribe_rss }}" title="RSS">RSS</a>
+		<a class="rss" href="{{ site.subscribe_rss }}" title="rss">RSS</a>
 		{% endif %}
+    {% if site.linkedin_user %}
+    <a class="linkedin" href="http://www.linkedin.com/in/{{ site.linkedin_user }}" title="linkedin">LinkedIn</a>
+    {% endif %}
     {% if site.stackoverflow_user %}
     <a class="stackoverflow" href="http://stackoverflow.com/{{ site.stackoverflow_user }}" title="stackoverflow">Stackoverflow</a>
     {% endif %}

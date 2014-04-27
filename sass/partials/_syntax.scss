@@ -213,7 +213,7 @@ pre, .highlight, .gist-highlight {
   &::-webkit-scrollbar-thumb:horizontal { background: $solar-scroll-thumb;  -webkit-border-radius: 4px; border-radius: 4px }
 }
 
-.highlight code { 
+.highlight code {
   @extend .pre-code; background: #000;
 }
 figure.code {
@@ -223,12 +223,14 @@ figure.code {
   margin-bottom: 1.5em;
   pre { margin-bottom: 0; }
   figcaption {
+    border: 1px solid #c5c5c5;
     position: relative;
     @extend .code-title;
     a { @extend .download-source; }
   }
   .highlight {
     margin-bottom: 0;
+    margin-top: 8px;
   }
 }
 

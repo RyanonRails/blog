@@ -77,7 +77,8 @@ figure.code{
 	padding: 5px 15px;
 	@include border-radius(5px);
 	figcaption{
-		font-size: 0.9em;
+    border: 1px solid #c5c5c5;
+    font-size: 0.9em;
 		position: relative;
 		span{
 			margin: -5px -15px 0;
@@ -103,6 +104,7 @@ figure.code{
 	}
 	.highlight{
 		overflow-x: auto;
+    margin-top: 8px;
 	}
 	.line-numbers{
 		border-right: 1px solid $pre-border;

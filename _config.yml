@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://ryanonrails.com
-title: Ryan on Rails
-subtitle: Design it. Code it. Ship it.
+url: http://ryanjones.io
+title: Ryan Jones - Programming / Management / Methodologies
+subtitle: Programming / Management / Methodologies
 author: Ryan Jones
 simple_search: http://google.com/search
-description: Design it. Code it. Ship it.
+description: Thoughts on programming, management and methodologies.
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
@@ -64,13 +64,13 @@ default_asides: []
 # ----------------------- #
 
 # Github repositories
-github_user: RyanonRails
+github_user: ryanjones
 github_repo_count: 0
 github_show_profile_link: true
 github_skip_forks: true
 
 # Twitter
-twitter_user: RyanonRails
+twitter_user: ryanjones_io
 twitter_tweet_button: true
 
 # Google +1

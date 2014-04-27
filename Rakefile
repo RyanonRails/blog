@@ -13,7 +13,7 @@ rsync_args     = ""  # Any extra arguments to pass to rsync
 
 #S3 deploy overrides
 deploy_default = "s3"
-s3_bucket = "www.ryanonrails.com"
+s3_bucket = "www.ryanjones.io"
 
 # This will be configured for you when you run config_deploy
 deploy_branch  = "gh-pages"

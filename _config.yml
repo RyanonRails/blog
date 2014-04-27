@@ -4,7 +4,7 @@
 
 url: http://ryanjones.io
 title: Ryan Jones - Programming / Management / Methodologies
-subtitle: Programming / Management / Methodologies
+subtitle: Thoughts on programming, management and methodologies.
 author: Ryan Jones
 simple_search: http://google.com/search
 description: Thoughts on programming, management and methodologies.
@@ -19,7 +19,7 @@ date_format: "ordinal"
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email: ryan@system88.com
+email: ryan.michael.jones@gmail.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
@@ -101,4 +101,4 @@ google_analytics_tracking_id: UA-40783630-1
 facebook_like: false
 
 linkedin_user: ryanmichaeljones
-stackoverflow_user: users/677322/ryanonrails
+stackoverflow_user: users/677322/ryanjones

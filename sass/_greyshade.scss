@@ -99,6 +99,7 @@ body {
 						margin-left: 0px;
 					}
 					.entry-content {
+            padding-top: 20px;
 						margin-left: 0px;
 						.gist .gist-file .gist-data {
 							.line_numbers {
@@ -127,6 +128,10 @@ body {
 							}
 						}
 					}
+          .meta_date {
+            float: left;
+            padding-top: 5px;
+          }
 					.meta {
 						position: relative;
 						float: right;

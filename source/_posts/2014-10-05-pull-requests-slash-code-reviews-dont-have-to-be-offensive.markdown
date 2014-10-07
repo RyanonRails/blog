@@ -11,7 +11,7 @@ Code reviews are a pain. They take time away from development, disrupt workflow,
  be in a worse situation.
 
 When I started at AMA I noticed that there wasn't a huge amount of comments on any of the pull requests that were going up
- to production. It didn't matter if the pull request had 1-2 lines of changes, or 100's. That seemed odd, because
+ to production. It didn't matter if the pull request had 1-2 lines of changes, or 50. That seemed odd, because
  out on the internet this isn't really a problem. Developers seemingly love to bash/1up other developers when it comes to
  tools, methodologies or the technology they're using. We see this all the time when [a new feature gets added to rails](https://github.com/rails/rails/compare/9333ca7...23aa7da)
  or [dhh states that "tdd is dead"](http://david.heinemeierhansson.com/2014/tdd-is-dead-long-live-testing.html).
@@ -28,18 +28,37 @@ A local team is different. If you call the guy across from you a numbskull there
 Once we had narrowed down what was causing the issue we could start to work through each of the scenarios.
 
 **Everyone had their own coding style and didn't want to press that on other developers.**
- This was pretty easy to address. We ..
+ This was pretty easy to address. [Github's style guide](https://github.com/styleguide/ruby) provided a great base
+ to build off of. It wasn't overly complex and it laid out the rules in a clear concise fashion. We've added extra items
+ to our own style guide over time to improve readability and lower complexity. We've added other guides for other languages
+ such as CSS/JS/Coffeescript over time. It's very easy to point to a styleguide if any conflicts occur.
 
 **No one wanted to hurt other team member's feelings.**
- Once you accept that we all write bad code and we all make mistakes, you can start to focus on improving.
+ If you don't know what's out there you'll never know what to use. "I wish there was an app that did X.", "Haven't you heard about Waffle-a-tron,
+ it will do exactly that!". Sound familiar? **Knowing is half the battle.**
+ Code reviews allow you to learn about new ways of constructing/architecting code.
+ It might be as simple as introducing a map instead of a loop, introducing a builder pattern or even a quick lesson in dependency injection.
+ It's all about improving the clarity of code and never against the person who wrote the code. You can't know everything.
 
 **Some didn't feel that they were on the same skill levels as others.**
- z
+ Sometimes it's hard to "call out" team members of higher rank. You might not think that your ideas carry a lot of merit,
+ or that you don't have enough experience in the programming language. Here's the rub. If you ask a question like
+ "How does think work?" or "I was looking at X pattern, could we use this to improve this chunk of code?" you're going to learn a
+ 100x more than the guy who blindly accepts the PR. You're going to be 100x more valuable in the future and you're going to be 100x
+ more likely to excel. Be the best by calling out the best.
 
 **No one wanted to be "the one" that was holding up code from going to production.**
- z
+ If you push sub-par code into production. You're going to get a sub-par experience. Once I hammered that home with
+ the developers and upper management, there wasn't a problem anymore. The developers focused on creating quality code
+ and the upper management enjoyed dealing with a very low amount of regression and happy members.
+ Over time, the developers needed to realized that I would have their back if code wasn't to par and upper management
+ respected that I wouldn't release poorly written code into production (which always leads to unhappy members).
 
-And..
+
+
+
+
+A great guide for code reviews can be found here on [Thoughtbots code review guide](https://github.com/thoughtbot/guides/tree/master/code-review).
 
 
 

@@ -2,11 +2,11 @@
 layout: post
 title: "Pull Requests/Code Reviews don't have to be Offensive"
 date: 2014-10-05 19:51
-comments: true
-categories:
+comments: false
+categories: [Code Reviews, Pull Requests, Management]
 ---
 
-Code reviews are a pain. They take time away from development, disrupt workflow, and can even hurt developer's feelings. However,
+Code reviews are a pain. They take time away from development, disrupt workflow, and can even hurt developer's feelings.
  I think we can all agree that they're a necessary part of life, and that if we **DIDN'T** do them, we'd
  be in a worse situation.
 
@@ -17,8 +17,8 @@ When I started at AMA I noticed that there wasn't a huge amount of comments on a
  or [dhh states that "tdd is dead"](http://david.heinemeierhansson.com/2014/tdd-is-dead-long-live-testing.html).
 
 A local team is different. If you call the guy across from you a numbskull there's nothing stopping him from reaching
- out and bopping you one. I was able to work with the team (through 1 on 1's and team meetings) and I came up with
- the following list of problems.
+ out and bopping you one. I was able to work with the team (through 1 on 1's and team meetings) and we came up with
+ the following list of problems:
 
 1. Everyone had their own coding style and didn't want to press that on other developers
 2. No one wanted to hurt other team member's feelings
@@ -35,7 +35,7 @@ Once we had narrowed down what was causing the issue we could start to work thro
 
 **No one wanted to hurt other team member's feelings.**
  If you don't know what's out there you'll never know what to use. "I wish there was an app that did X.", "Haven't you heard about Waffle-a-tron,
- it will do exactly that!". Sound familiar? **Knowing is half the battle.**
+ it will do exactly that!". Sound familiar? _Knowing is half the battle._
  Code reviews allow you to learn about new ways of constructing/architecting code.
  It might be as simple as introducing a map instead of a loop, introducing a builder pattern or even a quick lesson in dependency injection.
  It's all about improving the clarity of code and never against the person who wrote the code. You can't know everything.
@@ -49,20 +49,14 @@ Once we had narrowed down what was causing the issue we could start to work thro
 
 **No one wanted to be "the one" that was holding up code from going to production.**
  If you push sub-par code into production. You're going to get a sub-par experience. Once I hammered that home with
- the developers and upper management, there wasn't a problem anymore. The developers focused on creating quality code
- and the upper management enjoyed dealing with a very low amount of regression and happy members.
+ the developers and upper management, the overall issue was moot. The developers focused on creating quality code
+ and the upper management enjoyed dealing with a very low amount of regression which led to happy members.
  Over time, the developers needed to realized that I would have their back if code wasn't to par and upper management
- respected that I wouldn't release poorly written code into production (which always leads to unhappy members).
+ respected that I wouldn't release poorly written code into production (which can lead to a tarnished reputation).
 
-
-
-
+Keep in mind that code reviews are a process and can take awhile to turn things around. It might take a few weeks
+ before people start to get comfortable.
 
 A great guide for code reviews can be found here on [Thoughtbots code review guide](https://github.com/thoughtbot/guides/tree/master/code-review).
 
-
-
-
-
-
-
+Ry

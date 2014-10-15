@@ -4,6 +4,7 @@ title: "Pull Requests/Code Reviews don't have to be Offensive"
 date: 2014-10-05 19:51
 comments: false
 categories: [Code Reviews, Pull Requests, Management]
+description: "Code reviews are a pain. They take time away from development, disrupt workflow, and can even cause conflicts among teammates."
 ---
 
 Code reviews are a pain. They take time away from development, disrupt workflow, and can even cause conflicts among teammates.

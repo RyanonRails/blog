@@ -6,8 +6,8 @@ comments: false
 categories: [Code Reviews, Pull Requests, Management]
 ---
 
-Code reviews are a pain. They take time away from development, disrupt workflow, and can even hurt developer's feelings.
- I think we can all agree that they're a necessary part of life, and that if we **DIDN'T** do them, we'd
+Code reviews are a pain. They take time away from development, disrupt workflow, and can even cause conflicts among teammates.
+ However, I think we can all agree that they're a necessary part of life, and that if we **DIDN'T** do them, we'd
  be in a worse situation.
 
 When I started at AMA I noticed that there wasn't a huge amount of comments on any of the pull requests that were going up
@@ -38,7 +38,7 @@ Once we had narrowed down what was causing the issue we could start to work thro
  it will do exactly that!". Sound familiar? _Knowing is half the battle._
  Code reviews allow you to learn about new ways of constructing/architecting code.
  It might be as simple as introducing a map instead of a loop, introducing a builder pattern or even a quick lesson in dependency injection.
- It's all about improving the clarity of code and never against the person who wrote the code. You can't know everything.
+ It's all about improving the clarity and quality of the code and never against the person who wrote the code.
 
 **Some didn't feel that they were on the same skill levels as others.**
  Sometimes it's hard to "call out" team members of higher rank. You might not think that your ideas carry a lot of merit,
@@ -51,12 +51,13 @@ Once we had narrowed down what was causing the issue we could start to work thro
  If you push sub-par code into production. You're going to get a sub-par experience. Once I hammered that home with
  the developers and upper management, the overall issue was moot. The developers focused on creating quality code
  and the upper management enjoyed dealing with a very low amount of regression which led to happy members.
- Over time, the developers needed to realized that I would have their back if code wasn't to par and upper management
+ Over time, the developers realized that I would have their back if code wasn't to par and upper management
  respected that I wouldn't release poorly written code into production (which can lead to a tarnished reputation).
 
 Keep in mind that code reviews are a process and can take awhile to turn things around. It might take a few weeks
- before people start to get comfortable.
+ before people start to get comfortable. Your code base will thank you for taking the time to improve your code reviews ;).
 
-A great guide for code reviews can be found here on [Thoughtbots code review guide](https://github.com/thoughtbot/guides/tree/master/code-review).
+A great guide on code reviews can be found here on [Thoughtbots code review guide](https://github.com/thoughtbot/guides/tree/master/code-review).
+ It has some really great suggestions for reviewing code and receiving code reviews.
 
 Ry

@@ -17,7 +17,7 @@ article{
 		}
 	}
 	.entry-content{
-		line-height: 1.6;
+		line-height: 1.5em;
 		a{
 			&:hover{
 				text-decoration: underline;
@@ -31,7 +31,7 @@ article{
 			&:before{
 				content: "\f061";
 				font: 1.3em $font-icon;
-				line-height: 1.6em;
+				line-height: 1.5em;
 				position: absolute;
 				left: 0;
 			}
@@ -111,7 +111,7 @@ article{
 				content: "\f040";
 				color: $color-gray03;
 				font: 1.3em $font-icon;
-				line-height: 1.6em;
+				line-height: 1.5em;
 				position: absolute;
 				left: 0;
 			}

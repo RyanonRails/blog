@@ -4,6 +4,7 @@ title: "Improving your Ruby code base"
 date: 2014-11-19 19:32
 comments: false
 categories: [Ruby, Rails, Code, Improvement]
+description: Everyone has inherited a codebase that was in dire need of a re-write (at least a portion of it). If you haven’t, consider yourself one of the lucky few.
 ---
 
 Everyone has inherited a codebase that was in dire need of a re-write (at least a portion of it). If you haven't, consider yourself one of the lucky
@@ -170,33 +171,6 @@ Build your own Rules/Standards/Toolset
 It's important to note that we built this ruleset as a team as we hit rough patches of code. It's not going to work if you just
  drop a bunch of rules on your team of developers, or try and implemennt something overnight. **Do not** drop some of the tools
  in place without chatting with your team of developers (you are doing a weekly meeting, right?).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-how to get better
-
-simplecov
-
-coding rules
-
-
 
 
 

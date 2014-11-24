@@ -20,25 +20,23 @@ I'm going to ask you a loaded question. **Do you write good Ruby code?** I used 
  probably going to be just as bad as the previous code. It's a harsh reality, but once you accept that you're old codebase
  is a reflection of your skill level, you can start to improve, and prevent future failures.
 
-But how do you improve? Books. Specifically this [book](http://www.amazon.com/gp/product/0321721330/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321721330&linkCode=as2&tag=sandimetzcom-20&linkId=MEEIA2TTJVD6F5DO)
- Most of the time I read books, and nothing sticks. POODR was the first book that I started to read and make my code better **the next day**.
- The simplest thing I started to do was using an args hash and calling fetch on those values (with a default if it didn't exist). I started
- leveraging objects much more, and wrote less procedural code.
+But how do you improve? Books. Specifically this [book](http://www.amazon.com/gp/product/0321721330/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0321721330&linkCode=as2&tag=sandimetzcom-20&linkId=MEEIA2TTJVD6F5DO).
+ Most of the time when I read books, nothing sticks. Or it only becomes beneficial in very specific scenarios. POODR was the first ruby book that I started to read and made my code better **the next day**.
+ I started leveraging objects much more, and wrote less procedural code. It teaches you to truly embrace OOP.
 
 Coding Rules/standards
 ---------------------
 
 All teams have varying skill levels. So how do you start to improve as a team? Luckily, Sandi has given a few good base
- [rules](https://gist.github.com/simeonwillbanks/4567703) to follow (with the caveat of 'You can break these rules if you can talk your pair into agreeing with you'):
+ [rules](https://gist.github.com/simeonwillbanks/4567703) to follow (with the caveat of "You can break these rules if you can talk your pair into agreeing with you"):
 
 1. Your class can be no longer than 100 lines of code.
 2. Your methods can be no longer than five lines of code.
 3. You can pass no more than four parameters and you can’t just make it one big hash.
 4. When a call comes into your Rails controller, you can only instantiate one object to do whatever it is that needs to be done.
 
-In addition to those rules we've added in:
-
-  5. No instance variables. We use [decent-exposure](https://github.com/hashrocket/decent_exposure) and the expose helper to dry up our code which gives us
+In addition to those rules we've added one other.
+No instance variables. We use [decent-exposure](https://github.com/hashrocket/decent_exposure) and the expose helper to dry up our code which gives us
  an easy way to stub when testing.
 
 **You're going to struggle through those rules**. I remember lots of head scratching when we decided to follow this set of rules, but it becomes second nature
@@ -60,7 +58,7 @@ This rule to prevent craziness like this: ```object.batmans.breakfast.and.lunch.
 
 - No class methods, no ```def self.foo``` (unless you're doing a finder type method or returning a collection of a your own classes instances).
 
-I brought this up at the @yegrb meetup and everyone looked perplexed. We've found class methods are rarely ever needed. The only
+I brought this up at the [@yegrb](https://twitter.com/yegrb) meetup and everyone looked perplexed. We've found class methods are rarely ever needed. The only
  outlier would be doing some configuration or in the above scenarios.
 
 - Always pass a hash to an initializer method: ```def initialize(args = {})``` instead of ```def initailize(bar, baz)```
@@ -74,7 +72,7 @@ We used to have to do massive refactorings when we didn't pass a hash (because t
  If you have args, pass them in the constructor instead and then operate on them in the method.
 
 You want to throw as much stuff into the object as possible and let the methods act on the attributes. The simplest reason
- would be that all of the methods can act on the attributes and more complex like object composition.
+ would be that all of the methods can act on the attributes and more complex reasons like object composition.
 
 - Instead of referencing classes directly - set defaults in a constructor. Ideally set defaults in an initializer.
 
@@ -93,6 +91,7 @@ You want to throw as much stuff into the object as possible and let the methods 
 If you can set a default, do it. It'll save you grief later on when using the class elsewhere.
 
 -  If a method is not used outside a class, put it under `private` - this limits the public "API" of the class.
+
 Every so often we'd forget to put a method under private and it would start to get consumed (even though it shouldn't). This was
  more of a reminder for us than anything.
 
@@ -122,14 +121,14 @@ We fell into a nasty habit of relying on .env variables for a deploy (hooks spec
 - Only access ENV['stuff'] from the application or environment config files. These values will be pulled from the config object throughout the code.
 
 {% codeblock lang:ruby %}
-  module AwesomeApp
-    class Application < Rails::Application
-      config.epic_api_url = ENV['EPIC_URL']
-    end
+module AwesomeApp
+  class Application < Rails::Application
+    config.epic_api_url = ENV['EPIC_URL']
   end
+end
 
-  # and use throughout the app
-  RestClient.get Rails.configuration.epic_api_url
+# example of use
+RestClient.get Rails.configuration.epic_api_url
 {% endcodeblock %}
 
 This allows you to change the config var in 1 place instead of a global find/replace.
@@ -137,7 +136,7 @@ This allows you to change the config var in 1 place instead of a global find/rep
 - Do not use [delegate_presenter](https://github.com/rwilcox/delegate_presenter). [draper](https://github.com/drapergem/draper) is feature-rich.
 
 We started to use delegate_presenter as a slimmed down feature set of draper. We regretted it for 2 reasons. 1. turns out we needed those features (doh!) and
- 2. The gem is really inactive and it took almost 6mo to merge in a PR. Draper is well maintained at this point. We probably should change
+ 2. The gem is really inactive and it took almost 6mo to merge in a PR. Draper is really well maintained at this point. We probably should change
  this rule to 'use Draper'.
 
 -  Blank lines don't matter (within a method) and are not counted towards for method line length. It's a signal as to maybe that method
@@ -157,23 +156,22 @@ Tooling
 
 We use a couple of tools to keep the quality of our codebase up. Specifically we use:
 
-- [Brakeman](https://github.com/presidentbeef/brakeman) for security checks (make sure to keep it up to date!)
-- [Cane](https://github.com/square/cane) which helps keep the complexity low
+- [Brakeman](https://github.com/presidentbeef/brakeman) for security checks (make sure to keep it up to date!).
+- [Cane](https://github.com/square/cane) which helps keep the complexity low.
 - [Flay](https://github.com/seattlerb/flay) to flag down duplicate code.
 - [Simplecov](https://github.com/colszowka/simplecov) to make sure that our testing coverage doesn't go down.
 
 When it comes to Brakeman/Cane/Flay the rake tasks weren't crystal clear, so we created a few [wrapper rake tasks](https://gist.github.com/ryanjones/a9295a969e1804855ae4)
  to make them a bit more clear. We also make sure they returned 0/non-zero return codes so our CI would flag it if we broke some of the thresholds. Simplecov is a great
- tool for preventing code being written without tests. It's really useful for [viewing total coverage for a code path](https://camo.githubusercontent.com/3cb7252450587d575bca65e27f20107b1986d67e/687474703a2f2f636f6c737a6f776b612e6769746875622e636f6d2f73696d706c65636f762f6465766973655f736f757263655f66696c652d302e352e332e706e67).
+ tool for preventing code being written without tests. It's really useful to see if you've [covered off those edge cases](https://camo.githubusercontent.com/3cb7252450587d575bca65e27f20107b1986d67e/687474703a2f2f636f6c737a6f776b612e6769746875622e636f6d2f73696d706c65636f762f6465766973655f736f757263655f66696c652d302e352e332e706e67).
 
 Build your own Rules/Standards/Tool set
 ---------------------
 
 It's important to note that we built this rule set as a team as we hit rough patches of code. It's not going to work if you just
  drop a bunch of rules on your team, or try and implement something overnight. **Do not** drop some of the tools
- in place without chatting with your team  (you are doing a weekly meeting, right?).
+ in place without chatting with your team (you are doing a weekly meeting, right?).
 
-It's taken almost a full year to bring the codebase(s) though refactoring and following our standards. Persistence and
- acceptance from your team is all you need! Good luck!
+Work together at a team and make those codebase(s) better! Good luck!
 
 Ry

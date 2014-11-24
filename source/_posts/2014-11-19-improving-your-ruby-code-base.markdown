@@ -4,7 +4,7 @@ title: "Improving your Ruby code base"
 date: 2014-11-23 19:32
 comments: false
 categories: [Ruby, Rails, Code, Improvement]
-description: Everyone has inherited a codebase that was in dire need of a re-write (at least a portion of it). If you haven’t, consider yourself one of the lucky few.
+description: Everyone has inherited a codebase that was in dire need of a re-write (at least a portion of it). If you haven't, consider yourself one of the lucky few.
 ---
 
 Everyone has inherited a codebase that was in dire need of a re-write (at least a portion of it). If you haven't, consider yourself one of the lucky
@@ -32,7 +32,7 @@ All teams have varying skill levels. So how do you start to improve as a team? L
 
 1. Your class can be no longer than 100 lines of code.
 2. Your methods can be no longer than five lines of code.
-3. You can pass no more than four parameters and you can’t just make it one big hash.
+3. You can pass no more than four parameters and you can't just make it one big hash.
 4. When a call comes into your Rails controller, you can only instantiate one object to do whatever it is that needs to be done.
 
 In addition to those rules we've added one other.

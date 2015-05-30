@@ -1,5 +1,4 @@
 article{
-	border-bottom: 1px solid $color-gray04;
 	border-top: 1px solid $color-gray05;
 	padding: 30px 0;
 	position: relative;
@@ -10,7 +9,6 @@ article{
 		padding: 15px 0;
 	}
 	h1.title{
-		font-weight: 300;
 		line-height: 35px;
 		a{
 			color: $color-gray01;
@@ -55,7 +53,6 @@ article{
 			margin-top: 7px;
 		}
 		h2{
-			font-weight: 300;
 			border-bottom: 1px solid $color-gray04;
 			position: relative;
 			&:before{

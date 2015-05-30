@@ -75,6 +75,3 @@ Summary
 ---------------------
 
 If you're a member of AMA, you should expect the services to be available at all times. And we'll make sure that happens.
-
-
-Ryan

@@ -5,6 +5,11 @@ single: true
 
 <article itemscope itemtype="http://schema.org/Article" class="hentry post" role="article">
   {% include article.html %}
+  <footer>
+    <p class="alignright">
+      {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
+    </p>
+  </footer>
 </article>
 
 

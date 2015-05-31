@@ -201,7 +201,7 @@ p, li {
   overflow-x: auto;
 }
 
-$solar-scroll-bg: rgba(#fff, .15);
+$solar-scroll-bg: rgba(#ccc, .15);
 $solar-scroll-thumb: rgba(#fff, .2);
 @if $solarized == light {
   $solar-scroll-bg: rgba(#000, .15);

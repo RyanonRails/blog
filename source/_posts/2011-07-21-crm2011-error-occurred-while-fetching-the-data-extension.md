@@ -8,11 +8,11 @@ categories:
 ---
 
 
-I went to upload a report into CRM 2011 and this error came up:  
->Error occurred while fetching the data extension  
+I went to upload a report into CRM 2011 and this error came up:
+>Error occurred while fetching the data extension
 Error Details: Error occurred while fetching the list of data extensions installed on the report server.
 
-I also ran into this error while doing an import of reports into an organization (on a different occasion)  
+I also ran into this error while doing an import of reports into an organization (on a different occasion)
 >Error occurred while fetching the report
 
 ![][2]
@@ -43,5 +43,3 @@ Now we need to change the SQL Reporting Services URL for our organization. To do
  [4]: /images/old/Reporting-error-Editing-CRM2011-Org.png
 
 I was now able to go into CRM2011 and update the reports. Hopefully this helps!
-
-Ryan

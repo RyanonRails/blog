@@ -2,7 +2,7 @@
 title: 'SSRS 2008/CRM 2011 - System.InvalidOperationException: Trace Directory not defined'
 author: admin
 layout: post
-permalink: 
+permalink:
   /2011/07/22/ssrs-2008-crm2011-error-system-invalidoperationexception-trace-directory-not-defined/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
@@ -20,5 +20,3 @@ It didn’t matter which report I always got this error. I double checked all of
 I couldn’t believe it but it actually worked. Just uninstall the CRM Data Connector and then install it again.
 
 Some things are mystifying!
-
-Ryan

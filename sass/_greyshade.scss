@@ -84,7 +84,6 @@ body {
 			}
 		}
 		footer.inner {
-		  text-align: center;
 		  margin: 0px 70px 0px 40px;
 		  width: auto;
 		}
@@ -98,7 +97,7 @@ body {
 						margin-left: 0px;
 					}
 					.entry-content {
-            padding-top: 20px;
+            padding-top: 10px;
 						margin-left: 0px;
 						.gist .gist-file .gist-data {
 							.line_numbers {
@@ -133,6 +132,23 @@ body {
             padding-top: 5px;
           }
 					.meta {
+						position: relative;
+						top: 0px;
+						color: #555;
+						text-align: right;
+						width: auto;
+						.date::before {
+							color: #555;
+							position: relative;
+							margin-right: 10px;
+						}
+						.tags::before {
+							color: #999;
+							position: relative;
+							margin-right: 10px;
+						}
+					}
+					.meta2 {
 						position: relative;
 						float: right;
 						top: 0px;

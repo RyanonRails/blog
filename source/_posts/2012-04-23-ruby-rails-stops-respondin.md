@@ -28,11 +28,11 @@ There’s tons of issues with event machine installing on windows, so make sure 
 
 The worst part about this bug is that it can easily take you down a rabbit hole. Your error might be on a jquery line, or a css line (whatever asset is being served up). Some of the key things that I do know:
 
-This happens with Ruby 1.9.2  
+This happens with Ruby 1.9.2
 This happens with Rails > 3.0 (which makes me think it’s more a Ruby issue)
 
-Windows will produce these errors (hard crash of Ruby):  
-Ruby Interpreter (CUI) 1.9.2p290 [i386-mingw32] has stopped working  
+Windows will produce these errors (hard crash of Ruby):
+Ruby Interpreter (CUI) 1.9.2p290 [i386-mingw32] has stopped working
 Ruby Interpreter (CUI) 1.9.2p320 [i386-mingw32] has stopped working
 
 **Update:** I’m running Ruby 1.9.3p125 and haven’t hit this issue yet using WEBrick. This might be an alternative solution instead of using thin server.
@@ -46,6 +46,3 @@ platforms :mswin, :mingw do
   gem 'thin'
 end
 {% endcodeblock %}
-
-Thanks,  
-Ry

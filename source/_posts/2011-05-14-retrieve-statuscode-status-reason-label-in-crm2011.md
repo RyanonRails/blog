@@ -95,6 +95,3 @@ foreach (StatusOptionMetadata statusMeta in
 {% endcodeblock %}
 
 That should be it.
-
-Thanks,
-Ry

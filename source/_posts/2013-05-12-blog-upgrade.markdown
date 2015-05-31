@@ -16,7 +16,7 @@ Technology wise, I decided to drop Wordpress. A couple of friends have had luck 
 I also decided on ditching my old host (http://bluehost.com) and moved over to Amazon S3 & Cloudfront. The site is blazing fast now.
 There are a few tweaks I still need to do (compress assets, html crunch, clean up about page), but I think it should suffice for now.
 
-Here's the old blog layout: 
+Here's the old blog layout:
 
 ![][old layout]
 
@@ -30,5 +30,3 @@ And the new (which of course you're looking at ;) ):
 
 [old layout]: /images/posts/old_layout.png
 [new layout]: /images/posts/new_layout.png
-
-Ry

@@ -42,5 +42,3 @@ We noticed that it wasn't being loaded up into rails so [mvandenbeuken](https://
 Hopefully this will save you a few **'wtfs'** when your app is acting up when you upgrade dotenv. I think we've burned enough
  universal **'wtfs'** on our own.
 
-
-Ry

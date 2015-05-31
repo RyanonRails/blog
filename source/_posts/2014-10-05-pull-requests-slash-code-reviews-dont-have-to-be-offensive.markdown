@@ -61,4 +61,3 @@ Keep in mind that code reviews are a process and can take awhile to turn things 
 A great guide on code reviews can be found here on [Thoughtbots code review guide](https://github.com/thoughtbot/guides/tree/master/code-review).
  It has some really great suggestions for reviewing code and receiving code reviews.
 
-Ry

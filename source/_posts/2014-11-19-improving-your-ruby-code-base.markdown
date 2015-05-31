@@ -174,4 +174,3 @@ It's important to note that we built this rule set as a team as we hit rough pat
 
 Work together at a team and make those codebase(s) better! Good luck!
 
-Ry

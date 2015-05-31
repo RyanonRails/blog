@@ -5,14 +5,14 @@ title: >
   alternate access mappings settings in the SharePoint Central Administration.
 author: admin
 layout: post
-permalink: 
+permalink:
   /2011/07/22/an-error-occurred-while-loading-the-page-the-url-may-not-have-been-mapped-in-the-sharepoint-server-ask-your-system-administrator-to-check-the-configure-alternate-access-mappings-settings-in-the-shar/
 categories:
   - Microsoft / CRM / SharePoint / SSRS
 ---
 
 
-I recently ran into this error while trying to run the Document Manager in CRM 2011: 
+I recently ran into this error while trying to run the Document Manager in CRM 2011:
 
 >An error occurred while loading the page. The URL may not have been mapped in the SharePoint Server. Ask your system administrator to check the Configure alternate access mappings settings in the SharePoint Central Administration.
 
@@ -26,8 +26,6 @@ It was bizarre because I previously was working with the SharePoint 2010 site (w
 
 At some point I restarted the CRM Sandbox service. I don’t think it had anything to do with the fix, but I figured it might be worth mentioning it if people are still having issues. Hopefully this gets you off and running!
 
-Thanks,  
-Ry
 
 **Edit Aug 03,2011** – If this doesn’t work head over to [http://www.ryanonrails.com/2011/08/03/cannot-connect-with-document-manager-via-crm-2011-to-sharepoint-2010/][1] which might help you solve your problem.
 

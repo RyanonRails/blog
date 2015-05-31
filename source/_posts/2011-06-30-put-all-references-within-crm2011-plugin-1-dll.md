@@ -36,7 +36,7 @@ Right click your project again -> Click .csproj
 Scroll down to the bottom and find this line:
 {% codeblock lang:xml %}
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
@@ -59,7 +59,7 @@ Now paste this code underneath the comments (I like to keep the comments intact)
 It should look something like this now:
 {% codeblock lang:xml %}
 <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-<!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+<!-- To modify your build process, add your task inside one of the targets below and uncomment it.
      Other similar extension points exist, see Microsoft.Common.targets.
 <Target Name="BeforeBuild">
 </Target>
@@ -81,21 +81,21 @@ Now, you need to set **ONLY** the references that you want to copy into the DLL 
 
  [3]: /images/old/Copy_Local_True.png
 
-Now, we can reload our project by Right clicking our project -> Reload Project. Open up your plugin and add this event handler:  
+Now, we can reload our project by Right clicking our project -> Reload Project. Open up your plugin and add this event handler:
 
 {% codeblock lang:csharp %}
 private static Assembly OnResolveAssembly(object sender, ResolveEventArgs args)
 {
-   
+
   Assembly executingAssembly = Assembly.GetExecutingAssembly();
   AssemblyName assemblyName = new AssemblyName(args.Name);
   string path = assemblyName.Name + ".dll";
-  
+
   if (assemblyName.CultureInfo.Equals(CultureInfo.InvariantCulture) == false)
   {
      path = String.Format(@"{0}\{1}", assemblyName.CultureInfo, path);
   }
-  
+
   using (Stream stream = executingAssembly.GetManifestResourceStream(path))
   {
        if (stream == null)
@@ -135,6 +135,3 @@ This is where abunch of code came from (this was 1 exe with all of the dll’s w
 Good information on AssemblyResolve:
 
 A big shoutout to Donny for researching into this and the screen shots.
-
-Thanks,
-Ry

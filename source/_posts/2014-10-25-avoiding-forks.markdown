@@ -54,5 +54,3 @@ to how you do method overriding.
 
 Sidenote: If there's a different name for what I'm doing above I'd like to hear from you. At AMA we call them
 gem extensions, but after some googling I'm still unsure if this is the right lingo.
-
-Ry

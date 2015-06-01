@@ -1,14 +1,16 @@
 article{
 	border-top: 1px solid $color-gray05;
+	padding: 30px 0;
 	position: relative;
 	@media screen and (max-width: 800px){
 		padding-bottom: 15px;
 	}
-	@media screen and (max-width: 600px){
+	@media screen and (max-width: 600px) {
 		padding: 15px 0;
 	}
 	h1.title{
 		line-height: 35px;
+		padding: 0 !important;
 		a{
 			color: $color-gray01;
 		}
@@ -132,4 +134,11 @@ article{
 .share{
 	padding: 15px 0;
 	@include border-shadow();
+}
+
+.archive_title {
+	line-height: 15px;
+	a{
+		color: $color-gray01;
+	}
 }

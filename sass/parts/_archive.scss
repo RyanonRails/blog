@@ -6,13 +6,11 @@
 			position: absolute;
 			bottom: 0;
 			width: 200px;
-			border-top: 1px solid $color-gray04;
 		}
 	}
 	.year{
-		line-height: 35px;
+		padding-bottom: 10px;
 		width: 200px;
-		position: absolute;
 		top: 0;
 		padding-top: 15px;
 		border-top: 1px solid #fff;
@@ -21,7 +19,7 @@
 			position: absolute;
 			top: -2px;
 			width: 100%;
-			border-top: 1px solid $color-gray04;
+
 		}
 		@media screen and (max-width: 600px){
 			position: relative;
@@ -29,7 +27,6 @@
 		}
 	}
 	article{
-		margin-left: 200px;
 		@media screen and (max-width: 600px){
 			margin-left: 0;
 			&:first-of-type{

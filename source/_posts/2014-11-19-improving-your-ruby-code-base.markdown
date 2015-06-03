@@ -61,7 +61,7 @@ This rule to prevent craziness like this: ```object.batmans.breakfast.and.lunch.
 I brought this up at the [@yegrb](https://twitter.com/yegrb) meetup and everyone looked perplexed. We've found class methods are rarely ever needed. The only
  outlier would be doing some configuration or in the above scenarios.
 
-- Always pass a hash to an initializer method: ```def initialize(args = {})``` instead of ```def initailize(bar, baz)```
+- Always pass a hash to an initializer method: ```def initialize(args = {})``` instead of ```def initialize(bar, baz)```
 
 We used to have to do massive refactorings when we didn't pass a hash (because the changing of the method signature everywhere). This one
  is a hot topic, because it's tough to know what to pass into the method. We make sure to fetch the keys and raise an error if the key isn't

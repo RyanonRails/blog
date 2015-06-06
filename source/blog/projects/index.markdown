@@ -7,36 +7,53 @@ sharing: false
 footer: true
 ---
 
-Projects:
+## Projects
 
-Web
-yeg-rubyists - https://github.com/ryanjones/yeg-rubyists
-Alertzy - https://github.com/ryanjones/BrassSheepdog
+#### Web
+**yeg-rubyists** - A site to list blogs/tweets from yeg rubyists<br> https://github.com/ryanjones/yeg-rubyists  
 
-iOS
-Simple Rubymotion game for iPad: https://github.com/ryanjones/gem_sort
+**Alertzy** - Sent SMS/email reminders for garbage day/field closures/road plowing. Over 80+ reminders sent per day.  
+https://github.com/ryanjones/BrassSheepdog <br>
 
-OSX
-Simple Rubymotion game for OSX: https://github.com/ryanjones/gem_sort_osx
+#### iOS/OSX
 
+Gem Sort - A simple game for children. Drag the stars into the correctly colored box. Built for iOS and OSX with Rubymotion/Joybox.<br> 
+iOS (iPad): https://github.com/ryanjones/gem_sort / OSX: https://github.com/ryanjones/gem_sort_osx <br>
 
+## Talks
+#### yegrb
 
+Stripe: https://ryanjones.github.io/stripe-presentation/slides.html<br>
+Decent Exposure: https://ryanjones.github.io/decent-exposure-presentation/slides.html<br>
+Twilio: https://github.com/ryanjones/twilio_example_rails/tree/master/presentations  
+  
+#### exchange.js
 
-Competitions:
+batman.js: http://ryanjones.github.io/batman-presentation/slides.html
 
-Rails Rumble 2010: https://github.com/ryanjones/gemrage
-Rails Rumble 2012: http://railsrumble.com/entries/14-folder-chute
+#### Corporate
 
-
-Talks:
-
-yegrb - Twilio: https://github.com/ryanjones/twilio_example_rails
-yegrb - Stripe: https://github.com/ryanjones/stripe-presentation
-yegrb - Decent Exposure: https://github.com/ryanjones/decent-exposure-presentation
-                         https://ryanjones.github.io/decent-exposure-presentation/slides.html
-exchange.js - batman.js: http://ryanjones.github.io/batman-presentation/slides.html
-                         https://github.com/ryanjones/batman-presentation
 AMA - OAuth2: http://ryanjones.github.io/oauth2-presentation/slides.html
-              https://github.com/ryanjones/oauth2-presentation
+
+## Competitions
+
+#### Rails Rumble
+
+Gemrage - Built for the 2010 Rails Rumble. Our dream was to allow developers to install a gem to list out the most popular gems.
+ https://github.com/ryanjones/gemrage  
+
+![][2]  
+
+Folderchute - Built for the 2012 Rails Rumble. Using mover.io we moved files from file storage service to
+ file storage service (ie Dropbox to Google Drive). Written in Rails/AngularJS. http://railsrumble.com/entries/14-folder-chute  
+
+![][1]  
 
 
+
+
+[1]: /images/projects/folderchute_screenshot.png
+[2]: /images/projects/gemrage_screenshot.png
+ 
+ 
+ 

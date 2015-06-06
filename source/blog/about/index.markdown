@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Ryan Jones
+title: About
 sharing: false
 ---
 

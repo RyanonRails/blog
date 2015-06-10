@@ -7,15 +7,13 @@ sharing: false
 footer: true
 ---
 
-## Projects
-
-#### Web
+## Web
 **yeg-rubyists** - A site to list blogs/tweets from yeg rubyists<br> https://github.com/ryanjones/yeg-rubyists  
 
 **Alertzy** - Sent SMS/email reminders for garbage day/field closures/road plowing. Over 80+ reminders sent per day.  
 https://github.com/ryanjones/BrassSheepdog <br>
 
-#### iOS/OSX
+## iOS/OSX
 
 Gem Sort - A simple game for children. Drag the stars into the correctly colored box. Built for iOS and OSX with Rubymotion/Joybox.<br> 
 iOS (iPad): https://github.com/ryanjones/gem_sort / OSX: https://github.com/ryanjones/gem_sort_osx <br>
